@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CISS_311_Course_Project
 {
-    public partial class Form1 : Form
+    public partial class Directory : Form
     {
-        public Form1()
+        public Directory()
         {
             InitializeComponent();
         }
