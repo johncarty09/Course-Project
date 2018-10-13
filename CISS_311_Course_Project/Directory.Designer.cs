@@ -51,6 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCheckOut = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -222,6 +223,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnCheckOut);
             this.groupBox1.Controls.Add(this.txtShelfNumber);
             this.groupBox1.Controls.Add(this.txtYear);
             this.groupBox1.Controls.Add(this.txtQuantity);
@@ -285,6 +287,17 @@
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 11;
             // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCheckOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCheckOut.Location = new System.Drawing.Point(420, 129);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(146, 41);
+            this.btnCheckOut.TabIndex = 17;
+            this.btnCheckOut.Text = "Check - Out Book";
+            this.btnCheckOut.UseVisualStyleBackColor = false;
+            // 
             // Directory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,5 +345,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCheckOut;
     }
 }
