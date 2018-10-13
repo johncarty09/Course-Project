@@ -298,6 +298,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "New";
             this.Text = "Add New Book";
+            this.Load += new System.EventHandler(this.New_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
