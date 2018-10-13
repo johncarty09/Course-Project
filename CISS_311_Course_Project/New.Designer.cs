@@ -35,22 +35,22 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txtShelfNumber = new System.Windows.Forms.Label();
+            this.txtYear = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.Label();
+            this.txtISBN = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtMiddle = new System.Windows.Forms.Label();
+            this.txtFirstName = new System.Windows.Forms.Label();
+            this.txtLastName = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtTitle = new System.Windows.Forms.Label();
+            this.detailsListBox = new System.Windows.Forms.ListBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -110,14 +110,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.txtShelfNumber);
+            this.groupBox1.Controls.Add(this.txtYear);
+            this.groupBox1.Controls.Add(this.txtQuantity);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.txtISBN);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txtTitle);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -128,21 +128,51 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Details";
             // 
-            // label7
+            // txtShelfNumber
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Location = new System.Drawing.Point(64, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(206, 26);
-            this.label7.TabIndex = 2;
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtShelfNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtShelfNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtShelfNumber.Location = new System.Drawing.Point(66, 129);
+            this.txtShelfNumber.Name = "txtShelfNumber";
+            this.txtShelfNumber.Size = new System.Drawing.Size(79, 26);
+            this.txtShelfNumber.TabIndex = 13;
+            this.txtShelfNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtYear
+            // 
+            this.txtYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtYear.Location = new System.Drawing.Point(189, 129);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(40, 26);
+            this.txtYear.TabIndex = 12;
+            this.txtYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtQuantity.Location = new System.Drawing.Point(271, 129);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(40, 26);
+            this.txtQuantity.TabIndex = 14;
+            this.txtQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtISBN
+            // 
+            this.txtISBN.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtISBN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtISBN.Location = new System.Drawing.Point(317, 24);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(249, 26);
+            this.txtISBN.TabIndex = 11;
+            this.txtISBN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.txtMiddle);
+            this.groupBox2.Controls.Add(this.txtFirstName);
+            this.groupBox2.Controls.Add(this.txtLastName);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
@@ -153,23 +183,35 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Author";
             // 
-            // label8
+            // txtMiddle
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(238, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "First:";
+            this.txtMiddle.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtMiddle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtMiddle.Location = new System.Drawing.Point(487, 24);
+            this.txtMiddle.Name = "txtMiddle";
+            this.txtMiddle.Size = new System.Drawing.Size(40, 26);
+            this.txtMiddle.TabIndex = 10;
+            this.txtMiddle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // txtFirstName
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(19, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 13);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Last:";
+            this.txtFirstName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtFirstName.Location = new System.Drawing.Point(273, 25);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(177, 25);
+            this.txtFirstName.TabIndex = 9;
+            this.txtFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtLastName.Location = new System.Drawing.Point(55, 25);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(177, 26);
+            this.txtLastName.TabIndex = 8;
+            this.txtLastName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
@@ -180,120 +222,78 @@
             this.label10.TabIndex = 2;
             this.label10.Text = "M.I.";
             // 
-            // label11
+            // label9
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Location = new System.Drawing.Point(55, 25);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(177, 26);
-            this.label11.TabIndex = 8;
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(30, 13);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Last:";
             // 
-            // label12
+            // label8
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label12.Location = new System.Drawing.Point(273, 25);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(177, 25);
-            this.label12.TabIndex = 9;
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(238, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(29, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "First:";
             // 
-            // label13
+            // txtTitle
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label13.Location = new System.Drawing.Point(487, 24);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(40, 26);
-            this.label13.TabIndex = 10;
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtTitle.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtTitle.Location = new System.Drawing.Point(64, 24);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(206, 26);
+            this.txtTitle.TabIndex = 2;
+            this.txtTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label14
+            // detailsListBox
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label14.Location = new System.Drawing.Point(317, 24);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(249, 26);
-            this.label14.TabIndex = 11;
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.detailsListBox.FormattingEnabled = true;
+            this.detailsListBox.Location = new System.Drawing.Point(12, 272);
+            this.detailsListBox.Name = "detailsListBox";
+            this.detailsListBox.Size = new System.Drawing.Size(579, 121);
+            this.detailsListBox.TabIndex = 7;
             // 
-            // label15
+            // btnAdd
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label15.Location = new System.Drawing.Point(189, 129);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(40, 26);
-            this.label15.TabIndex = 12;
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.Location = new System.Drawing.Point(20, 220);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(146, 41);
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.Text = "Add Book";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // btnClear
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label16.Location = new System.Drawing.Point(66, 129);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(79, 26);
-            this.label16.TabIndex = 13;
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClear.Location = new System.Drawing.Point(224, 220);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(146, 41);
+            this.btnClear.TabIndex = 9;
+            this.btnClear.Text = "Clear Form";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // label17
+            // btnExit
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label17.Location = new System.Drawing.Point(271, 129);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(40, 26);
-            this.label17.TabIndex = 14;
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 272);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(579, 121);
-            this.listBox1.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(20, 220);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 41);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Add Book";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(224, 220);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 41);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Clear Form";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(432, 220);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 41);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "E&xit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(432, 220);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(146, 41);
+            this.btnExit.TabIndex = 10;
+            this.btnExit.Text = "E&xit";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(609, 405);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.detailsListBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Name = "New";
@@ -316,21 +316,21 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label txtTitle;
+        private System.Windows.Forms.Label txtShelfNumber;
+        private System.Windows.Forms.Label txtYear;
+        private System.Windows.Forms.Label txtQuantity;
+        private System.Windows.Forms.Label txtISBN;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label txtMiddle;
+        private System.Windows.Forms.Label txtFirstName;
+        private System.Windows.Forms.Label txtLastName;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListBox detailsListBox;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnExit;
     }
 }
