@@ -94,7 +94,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 136);
+            this.label5.Location = new System.Drawing.Point(6, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 13);
             this.label5.TabIndex = 4;
@@ -103,7 +103,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(236, 135);
+            this.label6.Location = new System.Drawing.Point(236, 142);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 5;
@@ -122,7 +122,7 @@
             // 
             this.lblShelfNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblShelfNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblShelfNumber.Location = new System.Drawing.Point(66, 129);
+            this.lblShelfNumber.Location = new System.Drawing.Point(66, 136);
             this.lblShelfNumber.Name = "lblShelfNumber";
             this.lblShelfNumber.Size = new System.Drawing.Size(79, 26);
             this.lblShelfNumber.TabIndex = 13;
@@ -132,7 +132,7 @@
             // 
             this.lblYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblYear.Location = new System.Drawing.Point(189, 129);
+            this.lblYear.Location = new System.Drawing.Point(189, 136);
             this.lblYear.Name = "lblYear";
             this.lblYear.Size = new System.Drawing.Size(40, 26);
             this.lblYear.TabIndex = 12;
@@ -142,7 +142,7 @@
             // 
             this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblQuantity.Location = new System.Drawing.Point(271, 129);
+            this.lblQuantity.Location = new System.Drawing.Point(271, 136);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(40, 26);
             this.lblQuantity.TabIndex = 14;
@@ -234,7 +234,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(151, 136);
+            this.label3.Location = new System.Drawing.Point(151, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 2;

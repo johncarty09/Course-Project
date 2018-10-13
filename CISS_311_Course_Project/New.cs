@@ -21,5 +21,10 @@ namespace CISS_311_Course_Project
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

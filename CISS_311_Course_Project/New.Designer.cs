@@ -35,22 +35,22 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtShelfNumber = new System.Windows.Forms.Label();
-            this.txtYear = new System.Windows.Forms.Label();
-            this.txtQuantity = new System.Windows.Forms.Label();
-            this.txtISBN = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtMiddle = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.Label();
-            this.txtLastName = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtTitle = new System.Windows.Forms.Label();
             this.detailsListBox = new System.Windows.Forms.ListBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.txtISBN = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtMiddle = new System.Windows.Forms.TextBox();
+            this.txtShelf = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
+            this.txtQty = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +75,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(151, 136);
+            this.label3.Location = new System.Drawing.Point(151, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 2;
@@ -93,7 +93,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 136);
+            this.label5.Location = new System.Drawing.Point(6, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 13);
             this.label5.TabIndex = 4;
@@ -102,7 +102,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(236, 135);
+            this.label6.Location = new System.Drawing.Point(236, 142);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 5;
@@ -110,14 +110,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtShelfNumber);
+            this.groupBox1.Controls.Add(this.txtQty);
             this.groupBox1.Controls.Add(this.txtYear);
-            this.groupBox1.Controls.Add(this.txtQuantity);
-            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtShelf);
             this.groupBox1.Controls.Add(this.txtISBN);
+            this.groupBox1.Controls.Add(this.txtTitle);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.txtTitle);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -127,46 +127,6 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Details";
-            // 
-            // txtShelfNumber
-            // 
-            this.txtShelfNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtShelfNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtShelfNumber.Location = new System.Drawing.Point(66, 129);
-            this.txtShelfNumber.Name = "txtShelfNumber";
-            this.txtShelfNumber.Size = new System.Drawing.Size(79, 26);
-            this.txtShelfNumber.TabIndex = 13;
-            this.txtShelfNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtYear
-            // 
-            this.txtYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtYear.Location = new System.Drawing.Point(189, 129);
-            this.txtYear.Name = "txtYear";
-            this.txtYear.Size = new System.Drawing.Size(40, 26);
-            this.txtYear.TabIndex = 12;
-            this.txtYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtQuantity.Location = new System.Drawing.Point(271, 129);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(40, 26);
-            this.txtQuantity.TabIndex = 14;
-            this.txtQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtISBN
-            // 
-            this.txtISBN.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtISBN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtISBN.Location = new System.Drawing.Point(317, 24);
-            this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(249, 26);
-            this.txtISBN.TabIndex = 11;
-            this.txtISBN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox2
             // 
@@ -182,36 +142,6 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Author";
-            // 
-            // txtMiddle
-            // 
-            this.txtMiddle.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtMiddle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtMiddle.Location = new System.Drawing.Point(487, 24);
-            this.txtMiddle.Name = "txtMiddle";
-            this.txtMiddle.Size = new System.Drawing.Size(40, 26);
-            this.txtMiddle.TabIndex = 10;
-            this.txtMiddle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtFirstName.Location = new System.Drawing.Point(273, 25);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(177, 25);
-            this.txtFirstName.TabIndex = 9;
-            this.txtFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtLastName.Location = new System.Drawing.Point(55, 25);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(177, 26);
-            this.txtLastName.TabIndex = 8;
-            this.txtLastName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
@@ -239,16 +169,6 @@
             this.label8.Size = new System.Drawing.Size(29, 13);
             this.label8.TabIndex = 0;
             this.label8.Text = "First:";
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtTitle.Location = new System.Drawing.Point(64, 24);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(206, 26);
-            this.txtTitle.TabIndex = 2;
-            this.txtTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // detailsListBox
             // 
@@ -285,6 +205,63 @@
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(70, 28);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(200, 20);
+            this.txtTitle.TabIndex = 8;
+            // 
+            // txtISBN
+            // 
+            this.txtISBN.Location = new System.Drawing.Point(317, 28);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(249, 20);
+            this.txtISBN.TabIndex = 9;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Location = new System.Drawing.Point(55, 28);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(177, 20);
+            this.txtLastName.TabIndex = 9;
+            this.txtLastName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Location = new System.Drawing.Point(270, 28);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(180, 20);
+            this.txtFirstName.TabIndex = 10;
+            // 
+            // txtMiddle
+            // 
+            this.txtMiddle.Location = new System.Drawing.Point(487, 29);
+            this.txtMiddle.Name = "txtMiddle";
+            this.txtMiddle.Size = new System.Drawing.Size(64, 20);
+            this.txtMiddle.TabIndex = 11;
+            // 
+            // txtShelf
+            // 
+            this.txtShelf.Location = new System.Drawing.Point(64, 140);
+            this.txtShelf.Name = "txtShelf";
+            this.txtShelf.Size = new System.Drawing.Size(81, 20);
+            this.txtShelf.TabIndex = 10;
+            // 
+            // txtYear
+            // 
+            this.txtYear.Location = new System.Drawing.Point(189, 139);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(41, 20);
+            this.txtYear.TabIndex = 11;
+            // 
+            // txtQty
+            // 
+            this.txtQty.Location = new System.Drawing.Point(271, 139);
+            this.txtQty.Name = "txtQty";
+            this.txtQty.Size = new System.Drawing.Size(40, 20);
+            this.txtQty.TabIndex = 11;
+            // 
             // New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,15 +294,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label txtTitle;
-        private System.Windows.Forms.Label txtShelfNumber;
-        private System.Windows.Forms.Label txtYear;
-        private System.Windows.Forms.Label txtQuantity;
-        private System.Windows.Forms.Label txtISBN;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label txtMiddle;
-        private System.Windows.Forms.Label txtFirstName;
-        private System.Windows.Forms.Label txtLastName;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -333,5 +302,13 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.TextBox txtISBN;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtQty;
+        private System.Windows.Forms.TextBox txtYear;
+        private System.Windows.Forms.TextBox txtShelf;
+        private System.Windows.Forms.TextBox txtMiddle;
+        private System.Windows.Forms.TextBox txtFirstName;
     }
 }
