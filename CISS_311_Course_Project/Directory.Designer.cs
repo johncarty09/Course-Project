@@ -35,23 +35,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtShelfNumber = new System.Windows.Forms.Label();
-            this.txtYear = new System.Windows.Forms.Label();
-            this.txtQuantity = new System.Windows.Forms.Label();
-            this.txtISBN = new System.Windows.Forms.Label();
-            this.txtLastName = new System.Windows.Forms.Label();
+            this.lblShelfNumber = new System.Windows.Forms.Label();
+            this.lblYear = new System.Windows.Forms.Label();
+            this.lblQuantity = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtMiddle = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTitle = new System.Windows.Forms.Label();
+            this.btnCheckOut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnCheckOut = new System.Windows.Forms.Button();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.txtISBN = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtMiddle = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -118,55 +118,35 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "Last:";
             // 
-            // txtShelfNumber
+            // lblShelfNumber
             // 
-            this.txtShelfNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtShelfNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtShelfNumber.Location = new System.Drawing.Point(66, 129);
-            this.txtShelfNumber.Name = "txtShelfNumber";
-            this.txtShelfNumber.Size = new System.Drawing.Size(79, 26);
-            this.txtShelfNumber.TabIndex = 13;
-            this.txtShelfNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblShelfNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblShelfNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblShelfNumber.Location = new System.Drawing.Point(66, 129);
+            this.lblShelfNumber.Name = "lblShelfNumber";
+            this.lblShelfNumber.Size = new System.Drawing.Size(79, 26);
+            this.lblShelfNumber.TabIndex = 13;
+            this.lblShelfNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtYear
+            // lblYear
             // 
-            this.txtYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtYear.Location = new System.Drawing.Point(189, 129);
-            this.txtYear.Name = "txtYear";
-            this.txtYear.Size = new System.Drawing.Size(40, 26);
-            this.txtYear.TabIndex = 12;
-            this.txtYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblYear.Location = new System.Drawing.Point(189, 129);
+            this.lblYear.Name = "lblYear";
+            this.lblYear.Size = new System.Drawing.Size(40, 26);
+            this.lblYear.TabIndex = 12;
+            this.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtQuantity
+            // lblQuantity
             // 
-            this.txtQuantity.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtQuantity.Location = new System.Drawing.Point(271, 129);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(40, 26);
-            this.txtQuantity.TabIndex = 14;
-            this.txtQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtISBN
-            // 
-            this.txtISBN.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtISBN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtISBN.Location = new System.Drawing.Point(317, 24);
-            this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(249, 26);
-            this.txtISBN.TabIndex = 11;
-            this.txtISBN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtLastName.Location = new System.Drawing.Point(55, 25);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(177, 26);
-            this.txtLastName.TabIndex = 8;
-            this.txtLastName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblQuantity.Location = new System.Drawing.Point(271, 129);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(40, 26);
+            this.lblQuantity.TabIndex = 14;
+            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
@@ -192,26 +172,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Author";
             // 
-            // txtMiddle
-            // 
-            this.txtMiddle.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtMiddle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtMiddle.Location = new System.Drawing.Point(487, 24);
-            this.txtMiddle.Name = "txtMiddle";
-            this.txtMiddle.Size = new System.Drawing.Size(40, 26);
-            this.txtMiddle.TabIndex = 10;
-            this.txtMiddle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtFirstName.Location = new System.Drawing.Point(273, 25);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(177, 25);
-            this.txtFirstName.TabIndex = 9;
-            this.txtFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnClear
             // 
             this.btnClear.Location = new System.Drawing.Point(224, 220);
@@ -223,15 +183,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnCheckOut);
-            this.groupBox1.Controls.Add(this.txtShelfNumber);
-            this.groupBox1.Controls.Add(this.txtYear);
-            this.groupBox1.Controls.Add(this.txtQuantity);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtISBN);
+            this.groupBox1.Controls.Add(this.txtTitle);
+            this.groupBox1.Controls.Add(this.btnCheckOut);
+            this.groupBox1.Controls.Add(this.lblShelfNumber);
+            this.groupBox1.Controls.Add(this.lblYear);
+            this.groupBox1.Controls.Add(this.lblQuantity);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.txtTitle);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -242,15 +202,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Details";
             // 
-            // txtTitle
+            // btnCheckOut
             // 
-            this.txtTitle.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtTitle.Location = new System.Drawing.Point(64, 24);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(206, 26);
-            this.txtTitle.TabIndex = 2;
-            this.txtTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCheckOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCheckOut.Location = new System.Drawing.Point(420, 129);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(146, 41);
+            this.btnCheckOut.TabIndex = 17;
+            this.btnCheckOut.Text = "Check - Out Book";
+            this.btnCheckOut.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -287,16 +248,40 @@
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 11;
             // 
-            // btnCheckOut
+            // txtTitle
             // 
-            this.btnCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCheckOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCheckOut.Location = new System.Drawing.Point(420, 129);
-            this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(146, 41);
-            this.btnCheckOut.TabIndex = 17;
-            this.btnCheckOut.Text = "Check - Out Book";
-            this.btnCheckOut.UseVisualStyleBackColor = false;
+            this.txtTitle.Location = new System.Drawing.Point(64, 28);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(201, 20);
+            this.txtTitle.TabIndex = 18;
+            // 
+            // txtISBN
+            // 
+            this.txtISBN.Location = new System.Drawing.Point(317, 28);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(201, 20);
+            this.txtISBN.TabIndex = 19;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Location = new System.Drawing.Point(55, 28);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(177, 20);
+            this.txtLastName.TabIndex = 19;
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Location = new System.Drawing.Point(270, 28);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(177, 20);
+            this.txtFirstName.TabIndex = 20;
+            // 
+            // txtMiddle
+            // 
+            this.txtMiddle.Location = new System.Drawing.Point(487, 28);
+            this.txtMiddle.Name = "txtMiddle";
+            this.txtMiddle.Size = new System.Drawing.Size(64, 20);
+            this.txtMiddle.TabIndex = 21;
             // 
             // Directory
             // 
@@ -329,22 +314,22 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label txtShelfNumber;
-        private System.Windows.Forms.Label txtYear;
-        private System.Windows.Forms.Label txtQuantity;
-        private System.Windows.Forms.Label txtISBN;
-        private System.Windows.Forms.Label txtLastName;
+        private System.Windows.Forms.Label lblShelfNumber;
+        private System.Windows.Forms.Label lblYear;
+        private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label txtMiddle;
-        private System.Windows.Forms.Label txtFirstName;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label txtTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.TextBox txtMiddle;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtISBN;
+        private System.Windows.Forms.TextBox txtTitle;
     }
 }
