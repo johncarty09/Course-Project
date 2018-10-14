@@ -1,6 +1,5 @@
---Create the DB
-CREATE DATABASE LibraryDB;
-;
+﻿--Create the DB
+--CREATE DATABASE LibraryDB;
 
 
 
@@ -44,3 +43,4 @@ CREATE TABLE [LibraryDB].[dbo].[Transaction]
   , DateDue DATE NOT NULL
   , DateReturned DATE
 );
+--*/
