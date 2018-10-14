@@ -10,9 +10,11 @@ using System.Windows.Forms;
 
 namespace CISS_311_Course_Project
 {
-    public partial class New : Form
+    public partial class NewBook : Form
     {
-        public New()
+        public event EventHandler updateEvent;
+
+        public NewBook()
         {
             InitializeComponent();
         }
@@ -26,5 +28,7 @@ namespace CISS_311_Course_Project
         {
 
         }
+
+
     }
 }

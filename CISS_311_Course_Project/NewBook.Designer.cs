@@ -1,6 +1,6 @@
 ﻿namespace CISS_311_Course_Project
 {
-    partial class New
+    partial class NewBook
     {
         /// <summary>
         /// Required designer variable.

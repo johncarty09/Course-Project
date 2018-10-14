@@ -37,17 +37,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(248, 89);
+            this.label1.Location = new System.Drawing.Point(331, 110);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 13);
+            this.label1.Size = new System.Drawing.Size(290, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to the Library management System";
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(69, 200);
+            this.btnNew.Location = new System.Drawing.Point(92, 246);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(149, 88);
+            this.btnNew.Size = new System.Drawing.Size(199, 108);
             this.btnNew.TabIndex = 1;
             this.btnNew.Text = "Add &New Book";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -55,18 +57,21 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(291, 200);
+            this.btnOpen.Location = new System.Drawing.Point(388, 246);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(149, 88);
+            this.btnOpen.Size = new System.Drawing.Size(199, 108);
             this.btnOpen.TabIndex = 2;
             this.btnOpen.Text = "&Open Directory";
             this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(504, 200);
+            this.btnExit.Location = new System.Drawing.Point(672, 246);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(149, 88);
+            this.btnExit.Size = new System.Drawing.Size(199, 108);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -74,13 +79,14 @@
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 417);
+            this.ClientSize = new System.Drawing.Size(1051, 513);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "mainForm";
             this.Text = "Library Management System";
             this.ResumeLayout(false);
