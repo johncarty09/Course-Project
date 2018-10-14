@@ -35,7 +35,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtQty = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
+            this.txtShelf = new System.Windows.Forms.TextBox();
+            this.txtISBN = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtMiddle = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,14 +51,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.txtISBN = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtMiddle = new System.Windows.Forms.TextBox();
-            this.txtShelf = new System.Windows.Forms.TextBox();
-            this.txtYear = new System.Windows.Forms.TextBox();
-            this.txtQty = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -128,6 +128,41 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Details";
             // 
+            // txtQty
+            // 
+            this.txtQty.Location = new System.Drawing.Point(271, 139);
+            this.txtQty.Name = "txtQty";
+            this.txtQty.Size = new System.Drawing.Size(40, 20);
+            this.txtQty.TabIndex = 11;
+            // 
+            // txtYear
+            // 
+            this.txtYear.Location = new System.Drawing.Point(189, 139);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(41, 20);
+            this.txtYear.TabIndex = 11;
+            // 
+            // txtShelf
+            // 
+            this.txtShelf.Location = new System.Drawing.Point(64, 140);
+            this.txtShelf.Name = "txtShelf";
+            this.txtShelf.Size = new System.Drawing.Size(81, 20);
+            this.txtShelf.TabIndex = 10;
+            // 
+            // txtISBN
+            // 
+            this.txtISBN.Location = new System.Drawing.Point(317, 28);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(249, 20);
+            this.txtISBN.TabIndex = 9;
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(70, 28);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(200, 20);
+            this.txtTitle.TabIndex = 8;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtMiddle);
@@ -142,6 +177,28 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Author";
+            // 
+            // txtMiddle
+            // 
+            this.txtMiddle.Location = new System.Drawing.Point(487, 29);
+            this.txtMiddle.Name = "txtMiddle";
+            this.txtMiddle.Size = new System.Drawing.Size(64, 20);
+            this.txtMiddle.TabIndex = 11;
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Location = new System.Drawing.Point(270, 28);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(180, 20);
+            this.txtFirstName.TabIndex = 10;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Location = new System.Drawing.Point(55, 28);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(177, 20);
+            this.txtLastName.TabIndex = 9;
+            this.txtLastName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label10
             // 
@@ -204,65 +261,9 @@
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // txtTitle
-            // 
-            this.txtTitle.Location = new System.Drawing.Point(70, 28);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(200, 20);
-            this.txtTitle.TabIndex = 8;
-            // 
-            // txtISBN
-            // 
-            this.txtISBN.Location = new System.Drawing.Point(317, 28);
-            this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(249, 20);
-            this.txtISBN.TabIndex = 9;
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Location = new System.Drawing.Point(55, 28);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(177, 20);
-            this.txtLastName.TabIndex = 9;
-            this.txtLastName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Location = new System.Drawing.Point(270, 28);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(180, 20);
-            this.txtFirstName.TabIndex = 10;
-            // 
-            // txtMiddle
-            // 
-            this.txtMiddle.Location = new System.Drawing.Point(487, 29);
-            this.txtMiddle.Name = "txtMiddle";
-            this.txtMiddle.Size = new System.Drawing.Size(64, 20);
-            this.txtMiddle.TabIndex = 11;
-            // 
-            // txtShelf
-            // 
-            this.txtShelf.Location = new System.Drawing.Point(64, 140);
-            this.txtShelf.Name = "txtShelf";
-            this.txtShelf.Size = new System.Drawing.Size(81, 20);
-            this.txtShelf.TabIndex = 10;
-            // 
-            // txtYear
-            // 
-            this.txtYear.Location = new System.Drawing.Point(189, 139);
-            this.txtYear.Name = "txtYear";
-            this.txtYear.Size = new System.Drawing.Size(41, 20);
-            this.txtYear.TabIndex = 11;
-            // 
-            // txtQty
-            // 
-            this.txtQty.Location = new System.Drawing.Point(271, 139);
-            this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(40, 20);
-            this.txtQty.TabIndex = 11;
-            // 
-            // New
+            // NewBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -273,7 +274,7 @@
             this.Controls.Add(this.detailsListBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "New";
+            this.Name = "NewBook";
             this.Text = "Add New Book";
             this.Load += new System.EventHandler(this.New_Load);
             this.groupBox1.ResumeLayout(false);

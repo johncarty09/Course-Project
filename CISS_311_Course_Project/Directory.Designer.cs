@@ -58,20 +58,19 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(576, 271);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Location = new System.Drawing.Point(432, 220);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(195, 50);
+            this.btnExit.Size = new System.Drawing.Size(146, 41);
             this.btnExit.TabIndex = 16;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(27, 271);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Location = new System.Drawing.Point(20, 220);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(195, 50);
+            this.btnSearch.Size = new System.Drawing.Size(146, 41);
             this.btnSearch.TabIndex = 14;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -79,50 +78,44 @@
             // detailsListBox
             // 
             this.detailsListBox.FormattingEnabled = true;
-            this.detailsListBox.ItemHeight = 16;
-            this.detailsListBox.Location = new System.Drawing.Point(16, 335);
-            this.detailsListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.detailsListBox.Location = new System.Drawing.Point(12, 272);
             this.detailsListBox.Name = "detailsListBox";
-            this.detailsListBox.Size = new System.Drawing.Size(771, 148);
+            this.detailsListBox.Size = new System.Drawing.Size(579, 121);
             this.detailsListBox.TabIndex = 13;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(317, 39);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(238, 32);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 17);
+            this.label8.Size = new System.Drawing.Size(29, 13);
             this.label8.TabIndex = 0;
             this.label8.Text = "First:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 176);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(6, 143);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 17);
+            this.label5.Size = new System.Drawing.Size(54, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Shelf No.:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(315, 175);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(236, 142);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 17);
+            this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Qty.:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(25, 39);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(19, 32);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 17);
+            this.label9.Size = new System.Drawing.Size(30, 13);
             this.label9.TabIndex = 1;
             this.label9.Text = "Last:";
             // 
@@ -130,10 +123,9 @@
             // 
             this.lblShelfNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblShelfNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblShelfNumber.Location = new System.Drawing.Point(88, 167);
-            this.lblShelfNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblShelfNumber.Location = new System.Drawing.Point(66, 136);
             this.lblShelfNumber.Name = "lblShelfNumber";
-            this.lblShelfNumber.Size = new System.Drawing.Size(105, 32);
+            this.lblShelfNumber.Size = new System.Drawing.Size(79, 26);
             this.lblShelfNumber.TabIndex = 13;
             this.lblShelfNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -141,10 +133,9 @@
             // 
             this.lblYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblYear.Location = new System.Drawing.Point(252, 167);
-            this.lblYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblYear.Location = new System.Drawing.Point(189, 136);
             this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(53, 32);
+            this.lblYear.Size = new System.Drawing.Size(40, 26);
             this.lblYear.TabIndex = 12;
             this.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -152,20 +143,18 @@
             // 
             this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblQuantity.Location = new System.Drawing.Point(361, 167);
-            this.lblQuantity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblQuantity.Location = new System.Drawing.Point(271, 136);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(53, 32);
+            this.lblQuantity.Size = new System.Drawing.Size(40, 26);
             this.lblQuantity.TabIndex = 14;
             this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(608, 38);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(456, 31);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(30, 17);
+            this.label10.Size = new System.Drawing.Size(25, 13);
             this.label10.TabIndex = 2;
             this.label10.Text = "M.I.";
             // 
@@ -177,45 +166,39 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(12, 68);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(9, 55);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(743, 82);
+            this.groupBox2.Size = new System.Drawing.Size(557, 67);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Author";
             // 
             // txtMiddle
             // 
-            this.txtMiddle.Location = new System.Drawing.Point(649, 34);
-            this.txtMiddle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMiddle.Location = new System.Drawing.Point(487, 28);
             this.txtMiddle.Name = "txtMiddle";
-            this.txtMiddle.Size = new System.Drawing.Size(84, 22);
+            this.txtMiddle.Size = new System.Drawing.Size(64, 20);
             this.txtMiddle.TabIndex = 21;
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(360, 34);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFirstName.Location = new System.Drawing.Point(270, 28);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(235, 22);
+            this.txtFirstName.Size = new System.Drawing.Size(177, 20);
             this.txtFirstName.TabIndex = 20;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(73, 34);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLastName.Location = new System.Drawing.Point(55, 28);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(235, 22);
+            this.txtLastName.Size = new System.Drawing.Size(177, 20);
             this.txtLastName.TabIndex = 19;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(299, 271);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClear.Location = new System.Drawing.Point(224, 220);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(195, 50);
+            this.btnClear.Size = new System.Drawing.Size(146, 41);
             this.btnClear.TabIndex = 15;
             this.btnClear.Text = "Clear Form";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -234,39 +217,34 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(773, 235);
+            this.groupBox1.Size = new System.Drawing.Size(580, 191);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Details";
             // 
             // txtISBN
             // 
-            this.txtISBN.Location = new System.Drawing.Point(423, 34);
-            this.txtISBN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtISBN.Location = new System.Drawing.Point(317, 28);
             this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(267, 22);
+            this.txtISBN.Size = new System.Drawing.Size(201, 20);
             this.txtISBN.TabIndex = 19;
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(85, 34);
-            this.txtTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTitle.Location = new System.Drawing.Point(64, 28);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(267, 22);
+            this.txtTitle.Size = new System.Drawing.Size(201, 20);
             this.txtTitle.TabIndex = 18;
             // 
             // btnCheckOut
             // 
             this.btnCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCheckOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCheckOut.Location = new System.Drawing.Point(560, 159);
-            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCheckOut.Location = new System.Drawing.Point(420, 129);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(195, 50);
+            this.btnCheckOut.Size = new System.Drawing.Size(146, 41);
             this.btnCheckOut.TabIndex = 17;
             this.btnCheckOut.Text = "Check - Out Book";
             this.btnCheckOut.UseVisualStyleBackColor = false;
@@ -274,54 +252,49 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(6, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 17);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Book Title:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(368, 38);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(276, 31);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 17);
+            this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "ISBN:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(201, 176);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(151, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 17);
+            this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Year:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 471);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(35, 383);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 17);
+            this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 11;
             // 
             // Directory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 502);
+            this.ClientSize = new System.Drawing.Size(609, 408);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.detailsListBox);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Directory";
             this.Text = "Directory";
             this.Load += new System.EventHandler(this.Directory_Load);

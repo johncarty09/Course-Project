@@ -29,6 +29,9 @@ namespace CISS_311_Course_Project
 
         }
 
-
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
