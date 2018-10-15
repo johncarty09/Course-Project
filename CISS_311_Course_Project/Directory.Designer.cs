@@ -52,6 +52,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtMemberID = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -205,6 +207,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtMemberID);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtISBN);
             this.groupBox1.Controls.Add(this.txtTitle);
             this.groupBox1.Controls.Add(this.btnCheckOut);
@@ -242,9 +246,10 @@
             // 
             this.btnCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCheckOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCheckOut.Location = new System.Drawing.Point(420, 129);
+            this.btnCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.Location = new System.Drawing.Point(465, 128);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(146, 41);
+            this.btnCheckOut.Size = new System.Drawing.Size(101, 41);
             this.btnCheckOut.TabIndex = 17;
             this.btnCheckOut.Text = "Check - Out Book";
             this.btnCheckOut.UseVisualStyleBackColor = false;
@@ -283,6 +288,23 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(317, 142);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Member ID:";
+            // 
+            // txtMemberID
+            // 
+            this.txtMemberID.Location = new System.Drawing.Point(395, 139);
+            this.txtMemberID.Name = "txtMemberID";
+            this.txtMemberID.Size = new System.Drawing.Size(64, 20);
+            this.txtMemberID.TabIndex = 22;
             // 
             // Directory
             // 
@@ -333,5 +355,7 @@
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.TextBox txtMemberID;
+        private System.Windows.Forms.Label label7;
     }
 }
