@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Borrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrower.Designer.cs">
+      <DependentUpon>Borrower.cs</DependentUpon>
+    </Compile>
     <Compile Include="Directory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Borrower.resx">
+      <DependentUpon>Borrower.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Directory.resx">
       <DependentUpon>Directory.cs</DependentUpon>
     </EmbeddedResource>
