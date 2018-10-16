@@ -1,3 +1,4 @@
+--LibraryDBConnectionString
 --Create the DB
 CREATE DATABASE LibraryDB; --Crate the database
 
@@ -33,7 +34,8 @@ CREATE TABLE [LibraryDB].[dbo].[Borrower]
   , BorrowerType VARCHAR(1) NOT NULL
   , BorrowerFirstName VARCHAR(50) NOT NULL
   , BorrowerLastName VARCHAR(50) NOT NULL
-  , InventoryOut INT NOT NULL
+  , CopiesOwned Int NOT NULL
+  , CopiesInStock INT NOT NULL
 );
 
 
@@ -41,13 +43,18 @@ CREATE TABLE [LibraryDB].[dbo].[Transaction]
 (
   [TransactionID] INT NOT NULL PRIMARY KEY
   , [ISBN] INT NOT NULL FOREIGN KEY REFERENCES Books(ISBN)
-  , [BorrowerID] INT NOT NULL FOREIGN KEY REFERENCES Borrower(BorrowerID)
-  , CheckoutDate DATE NOT NULL
-  , DateDue DATE NOT NULL
-  , DateReturned DATE
+  , [AuthorID] INT NOT NULL FOREIGN KEY REFERENCES Author(AuthorID)
 );
 
-/*
+--Create the Courses tabble
+CREATE TABLE [LibraryDB].[dbo].[Courses]
+(
+  [CourseID] INT NOT NULL PRIMARY KEY
+  , [InstructorID] INT NOT NULL FOREIGN KEY REFERENCES Instructors(InstructorID)
+  , CourseTitle VARCHAR(100) NOT NULL
+)
+
+
 --Populate both tables
 INSERT INTO [LibraryDB].[dbo].[Instructors](InstructorID, InstructorName)
 VALUES (1,'John Carty');
