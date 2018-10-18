@@ -87,6 +87,12 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckInOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckInOut.Designer.cs">
+      <DependentUpon>CheckInOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Borrower.resx">
       <DependentUpon>Borrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckInOut.resx">
+      <DependentUpon>CheckInOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Directory.resx">
       <DependentUpon>Directory.cs</DependentUpon>
