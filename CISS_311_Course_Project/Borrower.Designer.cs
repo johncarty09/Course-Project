@@ -30,7 +30,7 @@
         {
             this.btnExit = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.btn_addBorrower = new System.Windows.Forms.Button();
             this.detailsListBox = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -63,15 +63,16 @@
             this.btnClear.Text = "Clear Form";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // btnAdd
+            // btn_addBorrower
             // 
-            this.btnAdd.Location = new System.Drawing.Point(23, 261);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(134, 50);
-            this.btnAdd.TabIndex = 14;
-            this.btnAdd.Text = "Add Book";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btn_addBorrower.Location = new System.Drawing.Point(23, 261);
+            this.btn_addBorrower.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_addBorrower.Name = "btn_addBorrower";
+            this.btn_addBorrower.Size = new System.Drawing.Size(134, 50);
+            this.btn_addBorrower.TabIndex = 14;
+            this.btn_addBorrower.Text = "Add Borrower";
+            this.btn_addBorrower.UseVisualStyleBackColor = true;
+            this.btn_addBorrower.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // detailsListBox
             // 
@@ -172,7 +173,7 @@
             this.ClientSize = new System.Drawing.Size(725, 483);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btn_addBorrower);
             this.Controls.Add(this.detailsListBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
@@ -189,7 +190,7 @@
 
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btn_addBorrower;
         private System.Windows.Forms.ListBox detailsListBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
