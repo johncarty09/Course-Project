@@ -34,9 +34,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblBookAuthor = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblShelfNumber = new System.Windows.Forms.Label();
+            this.lblBookTitle = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMemberID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
@@ -50,6 +50,7 @@
             this.btnCancel.TabIndex = 22;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnCheckOut
             // 
@@ -84,9 +85,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.lblBookAuthor);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.lblShelfNumber);
+            this.groupBox1.Controls.Add(this.lblBookTitle);
             this.groupBox1.Location = new System.Drawing.Point(11, 35);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(515, 75);
@@ -103,15 +104,15 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "Author:";
             // 
-            // label4
+            // lblBookAuthor
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Location = new System.Drawing.Point(312, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(194, 26);
-            this.label4.TabIndex = 33;
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBookAuthor.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblBookAuthor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblBookAuthor.Location = new System.Drawing.Point(312, 24);
+            this.lblBookAuthor.Name = "lblBookAuthor";
+            this.lblBookAuthor.Size = new System.Drawing.Size(194, 26);
+            this.lblBookAuthor.TabIndex = 33;
+            this.lblBookAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -122,15 +123,15 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "Title:";
             // 
-            // lblShelfNumber
+            // lblBookTitle
             // 
-            this.lblShelfNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblShelfNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblShelfNumber.Location = new System.Drawing.Point(44, 24);
-            this.lblShelfNumber.Name = "lblShelfNumber";
-            this.lblShelfNumber.Size = new System.Drawing.Size(215, 26);
-            this.lblShelfNumber.TabIndex = 31;
-            this.lblShelfNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBookTitle.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblBookTitle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblBookTitle.Location = new System.Drawing.Point(44, 24);
+            this.lblBookTitle.Name = "lblBookTitle";
+            this.lblBookTitle.Size = new System.Drawing.Size(215, 26);
+            this.lblBookTitle.TabIndex = 31;
+            this.lblBookTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -178,9 +179,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblBookAuthor;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblShelfNumber;
+        private System.Windows.Forms.Label lblBookTitle;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtMemberID;
     }
