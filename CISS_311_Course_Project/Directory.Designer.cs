@@ -45,15 +45,14 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtISBN = new System.Windows.Forms.TextBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
-            this.btnCheckOut = new System.Windows.Forms.Button();
+            this.btnCheckInOut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtMemberID = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -207,11 +206,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtMemberID);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtISBN);
             this.groupBox1.Controls.Add(this.txtTitle);
-            this.groupBox1.Controls.Add(this.btnCheckOut);
+            this.groupBox1.Controls.Add(this.btnCheckInOut);
             this.groupBox1.Controls.Add(this.lblShelfNumber);
             this.groupBox1.Controls.Add(this.lblYear);
             this.groupBox1.Controls.Add(this.lblQuantity);
@@ -228,6 +226,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Details";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(317, 142);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.TabIndex = 20;
+            // 
             // txtISBN
             // 
             this.txtISBN.Location = new System.Drawing.Point(317, 28);
@@ -242,17 +249,17 @@
             this.txtTitle.Size = new System.Drawing.Size(201, 20);
             this.txtTitle.TabIndex = 18;
             // 
-            // btnCheckOut
+            // btnCheckInOut
             // 
-            this.btnCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCheckOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckOut.Location = new System.Drawing.Point(465, 128);
-            this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(101, 41);
-            this.btnCheckOut.TabIndex = 17;
-            this.btnCheckOut.Text = "Check - Out Book";
-            this.btnCheckOut.UseVisualStyleBackColor = false;
+            this.btnCheckInOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCheckInOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCheckInOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckInOut.Location = new System.Drawing.Point(420, 128);
+            this.btnCheckInOut.Name = "btnCheckInOut";
+            this.btnCheckInOut.Size = new System.Drawing.Size(140, 41);
+            this.btnCheckInOut.TabIndex = 17;
+            this.btnCheckInOut.Text = "Check In / Out";
+            this.btnCheckInOut.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -288,23 +295,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(317, 142);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Member ID:";
-            // 
-            // txtMemberID
-            // 
-            this.txtMemberID.Location = new System.Drawing.Point(395, 139);
-            this.txtMemberID.Name = "txtMemberID";
-            this.txtMemberID.Size = new System.Drawing.Size(64, 20);
-            this.txtMemberID.TabIndex = 22;
             // 
             // Directory
             // 
@@ -349,13 +339,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.Button btnCheckInOut;
         private System.Windows.Forms.TextBox txtMiddle;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.TextBox txtMemberID;
         private System.Windows.Forms.Label label7;
     }
 }
