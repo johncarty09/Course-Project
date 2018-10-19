@@ -83,7 +83,7 @@ namespace CISS_311_Course_Project
             
             using (conn = new SqlConnection(connectionString))
             using (SqlCommand comd = new SqlCommand(
-                "select concat(b.BorrowerFirstName, ' ', b.BorrowerLastName) as 'Name'," +
+                "select b.BorrowerID, concat(b.BorrowerFirstName, ' ', b.BorrowerLastName) as 'Name'," +
                 "b.InventoryOut from LibraryDB.dbo.Borrower b", conn))
             using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
             {
