@@ -28,19 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btn_addBorrower = new System.Windows.Forms.Button();
-            this.detailsListBox = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbl_Type = new System.Windows.Forms.Label();
             this.cbox_Type = new System.Windows.Forms.ComboBox();
             this.txt_lastName = new System.Windows.Forms.TextBox();
             this.txt_firstName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lbl_Type = new System.Windows.Forms.Label();
+            this.data_Borrowers = new System.Windows.Forms.DataGridView();
+            this.libraryDBDataSet = new CISS_311_Course_Project.LibraryDBDataSet();
+            this.libraryDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_Borrowers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -75,16 +81,6 @@
             this.btn_addBorrower.UseVisualStyleBackColor = true;
             this.btn_addBorrower.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // detailsListBox
-            // 
-            this.detailsListBox.FormattingEnabled = true;
-            this.detailsListBox.ItemHeight = 16;
-            this.detailsListBox.Location = new System.Drawing.Point(19, 325);
-            this.detailsListBox.Margin = new System.Windows.Forms.Padding(4);
-            this.detailsListBox.Name = "detailsListBox";
-            this.detailsListBox.Size = new System.Drawing.Size(689, 148);
-            this.detailsListBox.TabIndex = 13;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -111,8 +107,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Member Details";
             // 
+            // lbl_Type
+            // 
+            this.lbl_Type.AutoSize = true;
+            this.lbl_Type.Location = new System.Drawing.Point(8, 82);
+            this.lbl_Type.Name = "lbl_Type";
+            this.lbl_Type.Size = new System.Drawing.Size(40, 17);
+            this.lbl_Type.TabIndex = 11;
+            this.lbl_Type.Text = "Type";
+            this.lbl_Type.Click += new System.EventHandler(this.label5_Click);
+            // 
             // cbox_Type
             // 
+            this.cbox_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbox_Type.FormattingEnabled = true;
             this.cbox_Type.Items.AddRange(new object[] {
             "S",
@@ -158,32 +165,45 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Last Name";
             // 
-            // lbl_Type
+            // data_Borrowers
             // 
-            this.lbl_Type.AutoSize = true;
-            this.lbl_Type.Location = new System.Drawing.Point(8, 82);
-            this.lbl_Type.Name = "lbl_Type";
-            this.lbl_Type.Size = new System.Drawing.Size(40, 17);
-            this.lbl_Type.TabIndex = 11;
-            this.lbl_Type.Text = "Type";
-            this.lbl_Type.Click += new System.EventHandler(this.label5_Click);
+            this.data_Borrowers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_Borrowers.Location = new System.Drawing.Point(23, 329);
+            this.data_Borrowers.Name = "data_Borrowers";
+            this.data_Borrowers.RowTemplate.Height = 24;
+            this.data_Borrowers.Size = new System.Drawing.Size(685, 150);
+            this.data_Borrowers.TabIndex = 17;
+            // 
+            // libraryDBDataSet
+            // 
+            this.libraryDBDataSet.DataSetName = "LibraryDBDataSet";
+            this.libraryDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // libraryDBDataSetBindingSource
+            // 
+            this.libraryDBDataSetBindingSource.DataSource = this.libraryDBDataSet;
+            this.libraryDBDataSetBindingSource.Position = 0;
             // 
             // Borrower
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 482);
+            this.ClientSize = new System.Drawing.Size(725, 490);
+            this.Controls.Add(this.data_Borrowers);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btn_addBorrower);
-            this.Controls.Add(this.detailsListBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Borrower";
             this.Text = "New Member";
+            this.Load += new System.EventHandler(this.Borrower_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_Borrowers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,7 +214,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btn_addBorrower;
-        private System.Windows.Forms.ListBox detailsListBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_lastName;
@@ -205,5 +224,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbox_Type;
         private System.Windows.Forms.Label lbl_Type;
+        private System.Windows.Forms.DataGridView data_Borrowers;
+        private System.Windows.Forms.BindingSource libraryDBDataSetBindingSource;
+        private LibraryDBDataSet libraryDBDataSet;
     }
 }

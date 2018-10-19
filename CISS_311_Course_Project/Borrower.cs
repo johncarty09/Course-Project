@@ -22,6 +22,9 @@ namespace CISS_311_Course_Project
         public Borrower()
         {
             InitializeComponent();
+            connectionString = ConfigurationManager.ConnectionStrings[
+             "CISS_311_Course_Project.Properties.Settings.LibraryDBConnectionString"]
+             .ConnectionString;
 
         }
 
@@ -30,27 +33,37 @@ namespace CISS_311_Course_Project
          *  INSERT INTO [LibraryDB].[dbo].[Instructors]()
          *  VALUES (1,'John Carty');
          *  
-         *              connectionString = ConfigurationManager.ConnectionStrings[
-             "CISS_311_Course_Project.Properties.Settings.TeachingDBConnectionString"]
-             .ConnectionString;
+         *              
          * 
          */
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string firstName = txt_firstName.Text.ToString();
-            string lastName = txt_lastName.Text.ToString();
+            int newID = GetNewBorrowerID();
+            string firstName = txt_firstName.Text;
+            string lastName = txt_lastName.Text;
             string type = cbox_Type.SelectedItem.ToString();
             MessageBox.Show(firstName + lastName + type);
 
-            /*
-            using (conn = new SqlConnection(connectionString))
-            using (SqlCommand comd = new SqlCommand(
-                "INSERT INTO [LibraryDB].[dbo].[Borrower] (BorrowerID, BorrowerType, BorrowerFirstName, BorrowerLastName, InventoryOut) VALUES (@BorrowerID, @Type, @FirstName, @LastName, 0)", conn))
-            using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
+            if(firstName == "" || lastName == "" || type == "")
             {
+                MessageBox.Show("Please enter a value in the First Name, Last Name and Type box.");
+            } else
+            {
+                using (conn = new SqlConnection(connectionString))
+                using (SqlCommand comd = new SqlCommand(
+                    "INSERT INTO LibraryDB.dbo.Borrower (BorrowerID, BorrowerType, BorrowerFirstName, BorrowerLastName, InventoryOut)" + 
+                      "VALUES (@NewID, @Type, @FirstName, @LastName, 0)", conn))
+                {
+                    comd.Parameters.AddWithValue("@BorrowerFirstName", firstName);
+                    comd.Parameters.AddWithValue("@BorrowerLastName", lastName);
+                    comd.Parameters.AddWithValue("@Type", type);
+                    comd.Parameters.AddWithValue("@NewID", newID);
+                }
 
             }
+            /*
+
             */
         }
 
@@ -61,6 +74,50 @@ namespace CISS_311_Course_Project
 
         private void label5_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void Borrower_Load(object sender, EventArgs e)
+        {
+
+            
+            using (conn = new SqlConnection(connectionString))
+            using (SqlCommand comd = new SqlCommand(
+                "select concat(b.BorrowerFirstName, ' ', b.BorrowerLastName) as 'Name'," +
+                "b.InventoryOut from LibraryDB.dbo.Borrower b", conn))
+            using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
+            {
+                DataTable BorrowerTable = new DataTable();
+                adapter.Fill(BorrowerTable);
+
+
+                data_Borrowers.ReadOnly = true;
+                data_Borrowers.DataSource = BorrowerTable.DefaultView;
+
+                //detailsListBox.DataSource = BorrowerTable;
+                //detailsListBox.DisplayMember = "BorrowerID";
+            }
+
+            
+        }
+
+        private int GetNewBorrowerID()
+        {
+            int maxID;
+            using (conn = new SqlConnection(connectionString))
+            using (SqlCommand comd = new SqlCommand(
+                "select max(b.BorrowerID) AS bID from LibraryDB.dbo.Borrower b", conn))
+            using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
+            {
+                DataTable BorrowerTable = new DataTable();
+                adapter.Fill(BorrowerTable);
+                DataRow dr = BorrowerTable.Rows[0];
+                maxID = int.Parse(dr["bID"].ToString());
+                maxID++;
+                return maxID;
+
+            }
+
 
         }
     }
