@@ -41,17 +41,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(89, 50);
+            this.label1.Location = new System.Drawing.Point(119, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 20);
+            this.label1.Size = new System.Drawing.Size(442, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to the Library management System";
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(41, 35);
+            this.btnNew.Location = new System.Drawing.Point(55, 43);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(149, 88);
+            this.btnNew.Size = new System.Drawing.Size(199, 108);
             this.btnNew.TabIndex = 1;
             this.btnNew.Text = "Add New &Book";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(308, 35);
+            this.btnOpen.Location = new System.Drawing.Point(411, 43);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(149, 88);
+            this.btnOpen.Size = new System.Drawing.Size(199, 108);
             this.btnOpen.TabIndex = 2;
             this.btnOpen.Text = "&Open Directory";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -69,9 +72,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(308, 158);
+            this.btnExit.Location = new System.Drawing.Point(411, 194);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(149, 88);
+            this.btnExit.Size = new System.Drawing.Size(199, 108);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -79,12 +83,14 @@
             // 
             // btnAddMember
             // 
-            this.btnAddMember.Location = new System.Drawing.Point(41, 158);
+            this.btnAddMember.Location = new System.Drawing.Point(55, 194);
+            this.btnAddMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddMember.Name = "btnAddMember";
-            this.btnAddMember.Size = new System.Drawing.Size(149, 88);
+            this.btnAddMember.Size = new System.Drawing.Size(199, 108);
             this.btnAddMember.TabIndex = 4;
             this.btnAddMember.Text = "Add New &Member";
             this.btnAddMember.UseVisualStyleBackColor = true;
+            this.btnAddMember.Click += new System.EventHandler(this.btnAddMember_Click);
             // 
             // groupBox1
             // 
@@ -92,20 +98,23 @@
             this.groupBox1.Controls.Add(this.btnExit);
             this.groupBox1.Controls.Add(this.btnOpen);
             this.groupBox1.Controls.Add(this.btnNew);
-            this.groupBox1.Location = new System.Drawing.Point(25, 98);
+            this.groupBox1.Location = new System.Drawing.Point(33, 121);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(511, 284);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(681, 350);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Click and option to proceed";
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 417);
+            this.ClientSize = new System.Drawing.Size(764, 513);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "mainForm";
             this.Text = "Library Management System";
             this.groupBox1.ResumeLayout(false);

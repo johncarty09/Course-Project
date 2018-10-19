@@ -14,21 +14,25 @@ namespace CISS_311_Course_Project
 {
     public partial class Borrower : Form
     {
+
+        public event EventHandler updateEvent;
         string connectionString;    //global variable to hold the connection string
         SqlConnection conn;         //global variable to hold sql connection
 
         public Borrower()
         {
             InitializeComponent();
-            connectionString = ConfigurationManager.ConnectionStrings[
-             "CISS_311_Course_Project.Properties.Settings.TeachingDBConnectionString"]
-             .ConnectionString;
+
         }
 
         /*
          * 
          *  INSERT INTO [LibraryDB].[dbo].[Instructors]()
          *  VALUES (1,'John Carty');
+         *  
+         *              connectionString = ConfigurationManager.ConnectionStrings[
+             "CISS_311_Course_Project.Properties.Settings.TeachingDBConnectionString"]
+             .ConnectionString;
          * 
          */
 
@@ -36,8 +40,8 @@ namespace CISS_311_Course_Project
         {
             string firstName = txt_firstName.Text.ToString();
             string lastName = txt_lastName.Text.ToString();
-            string type = box_Type.SelectedText;
-            MessageBox.Show(firstName, lastName);
+            string type = cbox_Type.SelectedItem.ToString();
+            MessageBox.Show(firstName + lastName + type);
 
             /*
             using (conn = new SqlConnection(connectionString))
@@ -48,6 +52,16 @@ namespace CISS_311_Course_Project
 
             }
             */
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

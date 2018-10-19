@@ -61,5 +61,22 @@ namespace CISS_311_Course_Project
         {
             Close();
         }
+
+        private void btnAddMember_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            Borrower form2 = new Borrower();
+            form2.Show();
+
+            //Register the update event
+            form2.updateEvent += new EventHandler(handleUpdateEvent);
+
+            //Register form closed event
+            form2.FormClosed += new FormClosedEventHandler(form2_FormClosed);
+
+            form2.Show();
+
+        }
     }
 }
