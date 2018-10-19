@@ -31,31 +31,33 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.detailsListBox = new System.Windows.Forms.ListBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.lblShelfNumber = new System.Windows.Forms.Label();
             this.lblYear = new System.Windows.Forms.Label();
             this.lblQuantity = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtMiddle = new System.Windows.Forms.TextBox();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtISBN = new System.Windows.Forms.TextBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
-            this.btnCheckOut = new System.Windows.Forms.Button();
+            this.btnCheckInOut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtMemberID = new System.Windows.Forms.TextBox();
-            this.groupBox2.SuspendLayout();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnFindAuthor = new System.Windows.Forms.Button();
+            this.lblAuthorID = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtMiddle = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExit
@@ -85,19 +87,10 @@
             this.detailsListBox.Size = new System.Drawing.Size(579, 121);
             this.detailsListBox.TabIndex = 13;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(238, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "First:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 143);
+            this.label5.Location = new System.Drawing.Point(10, 162);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 13);
             this.label5.TabIndex = 4;
@@ -106,26 +99,17 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(236, 142);
+            this.label6.Location = new System.Drawing.Point(240, 161);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Qty.:";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(19, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 13);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Last:";
-            // 
             // lblShelfNumber
             // 
             this.lblShelfNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblShelfNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblShelfNumber.Location = new System.Drawing.Point(66, 136);
+            this.lblShelfNumber.Location = new System.Drawing.Point(70, 155);
             this.lblShelfNumber.Name = "lblShelfNumber";
             this.lblShelfNumber.Size = new System.Drawing.Size(79, 26);
             this.lblShelfNumber.TabIndex = 13;
@@ -135,7 +119,7 @@
             // 
             this.lblYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblYear.Location = new System.Drawing.Point(189, 136);
+            this.lblYear.Location = new System.Drawing.Point(193, 155);
             this.lblYear.Name = "lblYear";
             this.lblYear.Size = new System.Drawing.Size(40, 26);
             this.lblYear.TabIndex = 12;
@@ -145,56 +129,11 @@
             // 
             this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblQuantity.Location = new System.Drawing.Point(271, 136);
+            this.lblQuantity.Location = new System.Drawing.Point(275, 155);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(40, 26);
             this.lblQuantity.TabIndex = 14;
             this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(456, 31);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "M.I.";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtMiddle);
-            this.groupBox2.Controls.Add(this.txtFirstName);
-            this.groupBox2.Controls.Add(this.txtLastName);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(9, 55);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(557, 67);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Author";
-            // 
-            // txtMiddle
-            // 
-            this.txtMiddle.Location = new System.Drawing.Point(487, 28);
-            this.txtMiddle.Name = "txtMiddle";
-            this.txtMiddle.Size = new System.Drawing.Size(64, 20);
-            this.txtMiddle.TabIndex = 21;
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Location = new System.Drawing.Point(270, 28);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(177, 20);
-            this.txtFirstName.TabIndex = 20;
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Location = new System.Drawing.Point(55, 28);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(177, 20);
-            this.txtLastName.TabIndex = 19;
             // 
             // btnClear
             // 
@@ -207,17 +146,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtMemberID);
+            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtISBN);
             this.groupBox1.Controls.Add(this.txtTitle);
-            this.groupBox1.Controls.Add(this.btnCheckOut);
+            this.groupBox1.Controls.Add(this.btnCheckInOut);
             this.groupBox1.Controls.Add(this.lblShelfNumber);
             this.groupBox1.Controls.Add(this.lblYear);
             this.groupBox1.Controls.Add(this.lblQuantity);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -227,6 +165,15 @@
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Details";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(321, 161);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.TabIndex = 20;
             // 
             // txtISBN
             // 
@@ -242,17 +189,17 @@
             this.txtTitle.Size = new System.Drawing.Size(201, 20);
             this.txtTitle.TabIndex = 18;
             // 
-            // btnCheckOut
+            // btnCheckInOut
             // 
-            this.btnCheckOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCheckOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckOut.Location = new System.Drawing.Point(465, 128);
-            this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(101, 41);
-            this.btnCheckOut.TabIndex = 17;
-            this.btnCheckOut.Text = "Check - Out Book";
-            this.btnCheckOut.UseVisualStyleBackColor = false;
+            this.btnCheckInOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCheckInOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCheckInOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckInOut.Location = new System.Drawing.Point(453, 152);
+            this.btnCheckInOut.Name = "btnCheckInOut";
+            this.btnCheckInOut.Size = new System.Drawing.Size(107, 33);
+            this.btnCheckInOut.TabIndex = 17;
+            this.btnCheckInOut.Text = "Check In / Out";
+            this.btnCheckInOut.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -275,7 +222,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(151, 143);
+            this.label3.Location = new System.Drawing.Point(155, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 2;
@@ -289,22 +236,99 @@
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 11;
             // 
-            // label7
+            // groupBox2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(317, 142);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Member ID:";
+            this.groupBox2.Controls.Add(this.btnFindAuthor);
+            this.groupBox2.Controls.Add(this.lblAuthorID);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.txtMiddle);
+            this.groupBox2.Controls.Add(this.txtFirstName);
+            this.groupBox2.Controls.Add(this.txtLastName);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Location = new System.Drawing.Point(9, 54);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(557, 93);
+            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Author";
             // 
-            // txtMemberID
+            // btnFindAuthor
             // 
-            this.txtMemberID.Location = new System.Drawing.Point(395, 139);
-            this.txtMemberID.Name = "txtMemberID";
-            this.txtMemberID.Size = new System.Drawing.Size(64, 20);
-            this.txtMemberID.TabIndex = 22;
+            this.btnFindAuthor.Location = new System.Drawing.Point(430, 50);
+            this.btnFindAuthor.Name = "btnFindAuthor";
+            this.btnFindAuthor.Size = new System.Drawing.Size(121, 33);
+            this.btnFindAuthor.TabIndex = 11;
+            this.btnFindAuthor.Text = "Search";
+            this.btnFindAuthor.UseVisualStyleBackColor = true;
+            // 
+            // lblAuthorID
+            // 
+            this.lblAuthorID.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblAuthorID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblAuthorID.Location = new System.Drawing.Point(55, 53);
+            this.lblAuthorID.Name = "lblAuthorID";
+            this.lblAuthorID.Size = new System.Drawing.Size(180, 26);
+            this.lblAuthorID.TabIndex = 32;
+            this.lblAuthorID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 60);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 13);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "ID No.:";
+            // 
+            // txtMiddle
+            // 
+            this.txtMiddle.Location = new System.Drawing.Point(487, 20);
+            this.txtMiddle.Name = "txtMiddle";
+            this.txtMiddle.Size = new System.Drawing.Size(64, 20);
+            this.txtMiddle.TabIndex = 11;
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Location = new System.Drawing.Point(270, 19);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(180, 20);
+            this.txtFirstName.TabIndex = 10;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Location = new System.Drawing.Point(55, 19);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(177, 20);
+            this.txtLastName.TabIndex = 9;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(456, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(25, 13);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "M.I.";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 23);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(30, 13);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Last:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(238, 23);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(29, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "First:";
             // 
             // Directory
             // 
@@ -320,10 +344,10 @@
             this.Name = "Directory";
             this.Text = "Directory";
             this.Load += new System.EventHandler(this.Directory_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,28 +358,30 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.ListBox detailsListBox;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblShelfNumber;
         private System.Windows.Forms.Label lblYear;
         private System.Windows.Forms.Label lblQuantity;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.Button btnCheckInOut;
+        private System.Windows.Forms.TextBox txtISBN;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnFindAuthor;
+        private System.Windows.Forms.Label lblAuthorID;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtMiddle;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.TextBox txtISBN;
-        private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.TextBox txtMemberID;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
     }
 }
