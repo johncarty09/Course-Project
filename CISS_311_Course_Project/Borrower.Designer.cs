@@ -34,12 +34,12 @@
             this.detailsListBox = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.box_Type = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txt_lastName = new System.Windows.Forms.TextBox();
             this.txt_firstName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +95,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.box_Type);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt_lastName);
             this.groupBox1.Controls.Add(this.txt_firstName);
@@ -109,6 +109,26 @@
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Borrower Details";
+            // 
+            // box_Type
+            // 
+            this.box_Type.FormattingEnabled = true;
+            this.box_Type.Items.AddRange(new object[] {
+            "Student",
+            "Faculty"});
+            this.box_Type.Location = new System.Drawing.Point(115, 75);
+            this.box_Type.Name = "box_Type";
+            this.box_Type.Size = new System.Drawing.Size(121, 24);
+            this.box_Type.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 78);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 17);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Borrower Type";
             // 
             // txt_lastName
             // 
@@ -146,26 +166,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Last Name";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 17);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Borrower Type";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Student",
-            "Faculty"});
-            this.comboBox1.Location = new System.Drawing.Point(115, 75);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 11;
-            // 
             // Borrower
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -198,7 +198,7 @@
         private System.Windows.Forms.TextBox txt_firstName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox box_Type;
         private System.Windows.Forms.Label label3;
     }
 }
