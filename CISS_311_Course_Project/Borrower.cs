@@ -120,5 +120,12 @@ namespace CISS_311_Course_Project
 
 
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txt_firstName.Text = "";
+            txt_lastName.Text = "";
+            cbox_Type.SelectedIndex = -1;
+        }
     }
 }

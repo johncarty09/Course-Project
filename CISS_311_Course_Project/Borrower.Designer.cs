@@ -69,6 +69,7 @@
             this.btnClear.TabIndex = 15;
             this.btnClear.Text = "Clear Form";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btn_addBorrower
             // 
