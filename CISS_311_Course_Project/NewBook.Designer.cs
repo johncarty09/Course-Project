@@ -151,6 +151,7 @@
             // txtShelf
             // 
             this.txtShelf.Location = new System.Drawing.Point(93, 66);
+            this.txtShelf.MaxLength = 4;
             this.txtShelf.Name = "txtShelf";
             this.txtShelf.Size = new System.Drawing.Size(107, 22);
             this.txtShelf.TabIndex = 10;
@@ -183,14 +184,14 @@
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Location = new System.Drawing.Point(11, 116);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(475, 93);
+            this.groupBox2.Size = new System.Drawing.Size(496, 93);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Author";
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(270, 19);
+            this.txtFirstName.Location = new System.Drawing.Point(272, 19);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(180, 22);
             this.txtFirstName.TabIndex = 10;
@@ -235,7 +236,7 @@
             // 
             this.txt_AuthorID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_AuthorID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_AuthorID.Location = new System.Drawing.Point(55, 53);
+            this.txt_AuthorID.Location = new System.Drawing.Point(55, 54);
             this.txt_AuthorID.Name = "txt_AuthorID";
             this.txt_AuthorID.Size = new System.Drawing.Size(180, 26);
             this.txt_AuthorID.TabIndex = 32;
@@ -244,7 +245,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 60);
+            this.label7.Location = new System.Drawing.Point(6, 59);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 17);
             this.label7.TabIndex = 12;
@@ -270,6 +271,7 @@
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear Form";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnExit
             // 

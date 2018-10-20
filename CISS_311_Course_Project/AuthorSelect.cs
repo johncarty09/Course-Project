@@ -35,8 +35,7 @@ namespace CISS_311_Course_Project
 
         private void AuthorSelect_Load(object sender, EventArgs e)
         {
-            int count;
-            
+           
            //column3.Width = 700;
 
             using (conn = new SqlConnection(connectionString))

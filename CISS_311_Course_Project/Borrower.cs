@@ -15,7 +15,6 @@ namespace CISS_311_Course_Project
     public partial class Borrower : Form
     {
 
-        public event EventHandler updateEvent;
         string connectionString;    //global variable to hold the connection string
         SqlConnection conn;         //global variable to hold sql connection
 

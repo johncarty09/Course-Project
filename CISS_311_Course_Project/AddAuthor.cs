@@ -14,7 +14,7 @@ namespace CISS_311_Course_Project
 {
     public partial class AddAuthor : Form
     {
-        public event EventHandler updateEvent;
+
         int maxID;
         string connectionString;    //global variable to hold the connection string
         SqlConnection conn;         //global variable to hold sql connection
@@ -97,6 +97,18 @@ namespace CISS_311_Course_Project
         private void AddAuthor_Load(object sender, EventArgs e)
         {
             txt_Bio.Select();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txt_Bio.Text = "";
+            txt_firstName.Text = "";
+            txt_lastName.Text = "";
         }
     }
 }

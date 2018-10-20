@@ -222,7 +222,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
 
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbox_Type;
         private System.Windows.Forms.Label lbl_Type;
         private System.Windows.Forms.DataGridView data_Borrowers;

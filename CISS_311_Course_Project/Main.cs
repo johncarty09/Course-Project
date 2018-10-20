@@ -22,13 +22,8 @@ namespace CISS_311_Course_Project
             this.Hide();
             NewBook form2 = new NewBook();
 
-            //Register the update event
-            form2.updateEvent += new EventHandler(handleUpdateEvent);
-
-            //Register form closed event
-            form2.FormClosed += new FormClosedEventHandler(form2_FormClosed);
-
-            form2.Show();
+            form2.ShowDialog();
+            this.Show();
         }
 
         private void btnOpen_Click(object sender, EventArgs e)
@@ -37,23 +32,7 @@ namespace CISS_311_Course_Project
             Directory form2 = new Directory();
             form2.Show();
 
-            //Register the update event
-            form2.updateEvent += new EventHandler(handleUpdateEvent);
-
-            //Register form closed event
-            form2.FormClosed += new FormClosedEventHandler(form2_FormClosed);
-
-            form2.Show();
-        }
-
-        void form2_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Show();
-        }
-
-        //Handler for the event from form 2
-        void handleUpdateEvent(object sender, EventArgs e)
-        {
+            form2.ShowDialog();
             this.Show();
         }
 
@@ -69,13 +48,8 @@ namespace CISS_311_Course_Project
             Borrower form2 = new Borrower();
             form2.Show();
 
-            //Register the update event
-            form2.updateEvent += new EventHandler(handleUpdateEvent);
-
-            //Register form closed event
-            form2.FormClosed += new FormClosedEventHandler(form2_FormClosed);
-
-            form2.Show();
+            form2.ShowDialog();
+            this.Show();
 
         }
 
@@ -85,13 +59,8 @@ namespace CISS_311_Course_Project
             AddAuthor form2 = new AddAuthor();
             form2.Show();
 
-            //Register the update event
-            form2.updateEvent += new EventHandler(handleUpdateEvent);
-
-            //Register form closed event
-            form2.FormClosed += new FormClosedEventHandler(form2_FormClosed);
-
-            form2.Show();
+            form2.ShowDialog();
+            this.Show();
         }
     }
 }
