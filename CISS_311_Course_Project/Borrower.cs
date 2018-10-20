@@ -52,8 +52,6 @@ namespace CISS_311_Course_Project
             {
                 using (conn = new SqlConnection(connectionString))
                 using (SqlCommand comd = new SqlCommand(
-                    //INSERT INTO LibraryDB.dbo.Borrower (BorrowerID, BorrowerType, BorrowerFirstName, BorrowerLastName, InventoryOut) 
-                    //VALUES (12345, 'F', 'John', 'Carty', 0)
                     "INSERT INTO LibraryDB.dbo.Borrower (BorrowerID, BorrowerType, BorrowerFirstName, BorrowerLastName, InventoryOut)" + 
                       "VALUES (@NewID, @Type, @FirstName, @LastName, 0)", conn))
                 {
@@ -66,9 +64,6 @@ namespace CISS_311_Course_Project
                 }
 
             }
-            /*
-
-            */
         }
 
         private void btnExit_Click(object sender, EventArgs e)

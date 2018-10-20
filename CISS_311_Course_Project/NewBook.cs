@@ -49,31 +49,58 @@ namespace CISS_311_Course_Project
 
         private void btnFindAuthor_Click(object sender, EventArgs e)
         {
-            int count;
+            int count, aID;
             string firstName = txtFirstName.Text;
             string lastName = txtLastName.Text;
             using (conn = new SqlConnection(connectionString))
             using (SqlCommand comd = new SqlCommand(
-                "select count(a.AuthorID) AS aID from LibraryDB.dbo.Author a"+
-                "where a.FirstName = @firstName and a.LastName = @lastName", conn))
+                "select count(a.AuthorID) AS aID from LibraryDB.dbo.Author a "+
+                "where a.AuthorFirstName = @firstName and a.AuthorLastName = @lastName", conn))
             using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
             {
-                DataTable BorrowerTable = new DataTable();
-                adapter.Fill(BorrowerTable);
-                DataRow dr = BorrowerTable.Rows[0];
+                comd.Parameters.AddWithValue("@firstName", firstName);
+                comd.Parameters.AddWithValue("@lastName", lastName);
+
+                DataTable AuthorTable = new DataTable();
+                adapter.Fill(AuthorTable);
+                DataRow dr = AuthorTable.Rows[0];
                 count = int.Parse(dr["aID"].ToString());
                 if (count == 0)
                 {
                     //open add author form
+                    AddAuthor form3 = new AddAuthor();
+                    form3.SetFirstName = firstName;
+                    form3.SetLastName = lastName;
+                    form3.ShowDialog();
+
+                    txt_AuthorID.Text = form3.ReturnNewID.ToString();                    
+             
+
                 } else if (count == 1)
                 {
-                    //load author info
+                    using (SqlCommand cmd = new SqlCommand(
+                        "select AuthorID from LibraryDB.dbo.Author " +
+                        "where AuthorFirstName = @firstName and AuthorLastName = @lastName", conn))
+                    using (SqlDataAdapter adapter2 = new SqlDataAdapter(cmd))
+                    {
+                        cmd.Parameters.AddWithValue("@firstName", firstName);
+                        cmd.Parameters.AddWithValue("@lastName", lastName);
+                        DataTable AuthorIDtable = new DataTable();
+                        adapter2.Fill(AuthorIDtable);
+                        DataRow dr2 = AuthorIDtable.Rows[0];
+                        txt_AuthorID.Text = dr2["AuthorID"].ToString();
+                    }
                 } else
                 {
                     //load form to select correct author
                 }
 
             }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,7 +46,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnFindAuthor = new System.Windows.Forms.Button();
-            this.lblAuthorID = new System.Windows.Forms.Label();
+            this.txt_AuthorID = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -175,7 +175,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnFindAuthor);
-            this.groupBox2.Controls.Add(this.lblAuthorID);
+            this.groupBox2.Controls.Add(this.txt_AuthorID);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtFirstName);
             this.groupBox2.Controls.Add(this.txtLastName);
@@ -231,15 +231,15 @@
             this.btnFindAuthor.UseVisualStyleBackColor = true;
             this.btnFindAuthor.Click += new System.EventHandler(this.btnFindAuthor_Click);
             // 
-            // lblAuthorID
+            // txt_AuthorID
             // 
-            this.lblAuthorID.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblAuthorID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblAuthorID.Location = new System.Drawing.Point(55, 53);
-            this.lblAuthorID.Name = "lblAuthorID";
-            this.lblAuthorID.Size = new System.Drawing.Size(180, 26);
-            this.lblAuthorID.TabIndex = 32;
-            this.lblAuthorID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_AuthorID.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_AuthorID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_AuthorID.Location = new System.Drawing.Point(55, 53);
+            this.txt_AuthorID.Name = "txt_AuthorID";
+            this.txt_AuthorID.Size = new System.Drawing.Size(180, 26);
+            this.txt_AuthorID.TabIndex = 32;
+            this.txt_AuthorID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -259,6 +259,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add Book";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnClear
             // 
@@ -323,7 +324,7 @@
         private System.Windows.Forms.TextBox txtShelf;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnFindAuthor;
-        private System.Windows.Forms.Label lblAuthorID;
+        private System.Windows.Forms.Label txt_AuthorID;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;

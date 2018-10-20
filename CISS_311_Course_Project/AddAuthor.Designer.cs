@@ -38,20 +38,18 @@
             this.txt_firstName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.data_Authors = new System.Windows.Forms.DataGridView();
             this.libraryDBDataSet = new CISS_311_Course_Project.LibraryDBDataSet();
             this.libraryDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Bio = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_Authors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(601, 180);
+            this.btnExit.Location = new System.Drawing.Point(581, 180);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(133, 50);
@@ -61,7 +59,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(324, 180);
+            this.btnClear.Location = new System.Drawing.Point(304, 180);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(133, 50);
@@ -71,13 +69,14 @@
             // 
             // btn_addAuthor
             // 
-            this.btn_addAuthor.Location = new System.Drawing.Point(52, 180);
+            this.btn_addAuthor.Location = new System.Drawing.Point(32, 180);
             this.btn_addAuthor.Margin = new System.Windows.Forms.Padding(4);
             this.btn_addAuthor.Name = "btn_addAuthor";
             this.btn_addAuthor.Size = new System.Drawing.Size(133, 50);
             this.btn_addAuthor.TabIndex = 20;
             this.btn_addAuthor.Text = "Add Member";
             this.btn_addAuthor.UseVisualStyleBackColor = true;
+            this.btn_addAuthor.Click += new System.EventHandler(this.btn_addAuthor_Click);
             // 
             // label2
             // 
@@ -91,12 +90,12 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_Bio);
             this.groupBox1.Controls.Add(this.txt_lastName);
             this.groupBox1.Controls.Add(this.txt_firstName);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(53, 13);
+            this.groupBox1.Location = new System.Drawing.Point(33, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -141,15 +140,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Last Name";
             // 
-            // data_Authors
-            // 
-            this.data_Authors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_Authors.Location = new System.Drawing.Point(52, 248);
-            this.data_Authors.Name = "data_Authors";
-            this.data_Authors.RowTemplate.Height = 24;
-            this.data_Authors.Size = new System.Drawing.Size(685, 152);
-            this.data_Authors.TabIndex = 23;
-            // 
             // libraryDBDataSet
             // 
             this.libraryDBDataSet.DataSetName = "LibraryDBDataSet";
@@ -160,14 +150,14 @@
             this.libraryDBDataSetBindingSource.DataSource = this.libraryDBDataSet;
             this.libraryDBDataSetBindingSource.Position = 0;
             // 
-            // textBox1
+            // txt_Bio
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 84);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(584, 68);
-            this.textBox1.TabIndex = 10;
+            this.txt_Bio.Location = new System.Drawing.Point(92, 84);
+            this.txt_Bio.MaxLength = 100;
+            this.txt_Bio.Multiline = true;
+            this.txt_Bio.Name = "txt_Bio";
+            this.txt_Bio.Size = new System.Drawing.Size(584, 68);
+            this.txt_Bio.TabIndex = 10;
             // 
             // label3
             // 
@@ -182,18 +172,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 412);
+            this.ClientSize = new System.Drawing.Size(754, 241);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btn_addAuthor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.data_Authors);
             this.Name = "AddAuthor";
             this.Text = "AddAuthor";
+            this.Load += new System.EventHandler(this.AddAuthor_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_Authors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -212,10 +201,9 @@
         private System.Windows.Forms.TextBox txt_firstName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView data_Authors;
         private LibraryDBDataSet libraryDBDataSet;
         private System.Windows.Forms.BindingSource libraryDBDataSetBindingSource;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Bio;
     }
 }
