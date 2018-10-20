@@ -50,8 +50,6 @@ namespace CISS_311_Course_Project
                 comd.Parameters.AddWithValue("@lastName", lastName);
                 DataTable BorrowerTable = new DataTable();
                 adapter.Fill(BorrowerTable);
-                
-
                 data_Authors.ReadOnly = true;
                 data_Authors.DataSource = BorrowerTable.DefaultView;
                 data_Authors.Columns[2].Width = 345;

@@ -115,5 +115,10 @@ namespace CISS_311_Course_Project
             txt_lastName.Text = "";
             cbox_Type.SelectedIndex = -1;
         }
+
+        private void cbox_Type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -22,10 +22,19 @@ namespace CISS_311_Course_Project
             Close();
         }
 
+        /*
+         * INSERT INTO [LibraryDB].[dbo].[Transaction](TransactionID, ISBN, BorrowerID, CheckOutDate)
+            VALUES (1,1234567894567,12345, GETDATE());
+         * 
+         * */
+
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
-            //create transaction for todays date and link to member and isbn
-            //needs to decrement the on hand for book
+
+            //check how many borrower has out already max F 3 and S 2
+            //if ok then check if book is in stock 
+            //if ok then create transaction and decrement inventory of book
+
         }
 
         private void btnCheckIn_Click(object sender, EventArgs e)
@@ -43,11 +52,17 @@ namespace CISS_311_Course_Project
         private void btn_FindID_Click(object sender, EventArgs e)
         {
             //open form to search for member by name then return id
+            FindBorrower form2 = new FindBorrower();
+            form2.ShowDialog();
+            txtMemberID.Text = form2.GetBorrowerID;
         }
 
         private void btn_findISBN_Click(object sender, EventArgs e)
         {
             //open for to search for book by title and author then return isbn
+            FindISBN form2 = new FindISBN();
+            form2.ShowDialog();
+            txt_ISBN.Text = form2.GetISBN;
         }
     }
 }

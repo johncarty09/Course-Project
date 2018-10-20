@@ -113,7 +113,7 @@ namespace CISS_311_Course_Project
             string shelf = txtShelf.Text;
             passed = int.TryParse(txtYear.Text.ToString(), out int year);
             passed = int.TryParse(txtQty.Text.ToString(), out int qty);
-            int authorID = int.Parse(txt_AuthorID.Text.ToString());
+            int.TryParse(txt_AuthorID.Text.ToString(), out int authorID);
 
             if (ISBN == "" || title == "" || shelf == "" || authorID < 0 
                 || !passed || year > 2018 || year < 0 || qty < 0)

@@ -129,6 +129,7 @@
             this.cbox_Type.Name = "cbox_Type";
             this.cbox_Type.Size = new System.Drawing.Size(121, 24);
             this.cbox_Type.TabIndex = 10;
+            this.cbox_Type.SelectedIndexChanged += new System.EventHandler(this.cbox_Type_SelectedIndexChanged);
             // 
             // txt_lastName
             // 
@@ -168,9 +169,12 @@
             // 
             // data_Borrowers
             // 
+            this.data_Borrowers.AllowUserToAddRows = false;
+            this.data_Borrowers.AllowUserToDeleteRows = false;
             this.data_Borrowers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_Borrowers.Location = new System.Drawing.Point(19, 243);
             this.data_Borrowers.Name = "data_Borrowers";
+            this.data_Borrowers.ReadOnly = true;
             this.data_Borrowers.RowTemplate.Height = 24;
             this.data_Borrowers.Size = new System.Drawing.Size(689, 150);
             this.data_Borrowers.TabIndex = 17;
