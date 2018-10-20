@@ -35,6 +35,7 @@
             this.btnAddMember = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_AddAuthor = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,12 +63,12 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(474, 43);
+            this.btnOpen.Location = new System.Drawing.Point(8, 194);
             this.btnOpen.Margin = new System.Windows.Forms.Padding(4);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(199, 108);
             this.btnOpen.TabIndex = 2;
-            this.btnOpen.Text = "&Open Directory";
+            this.btnOpen.Text = "&Reporting";
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
@@ -84,7 +85,7 @@
             // 
             // btnAddMember
             // 
-            this.btnAddMember.Location = new System.Drawing.Point(8, 194);
+            this.btnAddMember.Location = new System.Drawing.Point(474, 43);
             this.btnAddMember.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddMember.Name = "btnAddMember";
             this.btnAddMember.Size = new System.Drawing.Size(199, 108);
@@ -95,6 +96,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.btn_AddAuthor);
             this.groupBox1.Controls.Add(this.btnAddMember);
             this.groupBox1.Controls.Add(this.btnExit);
@@ -104,7 +106,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(681, 350);
+            this.groupBox1.Size = new System.Drawing.Size(681, 326);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Click and option to proceed";
@@ -120,11 +122,22 @@
             this.btn_AddAuthor.UseVisualStyleBackColor = true;
             this.btn_AddAuthor.Click += new System.EventHandler(this.btn_AddAuthor_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(241, 194);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(199, 108);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Book &Check In/Out";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 513);
+            this.ClientSize = new System.Drawing.Size(764, 468);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -145,6 +158,7 @@
         private System.Windows.Forms.Button btnAddMember;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_AddAuthor;
+        private System.Windows.Forms.Button button1;
     }
 }
 

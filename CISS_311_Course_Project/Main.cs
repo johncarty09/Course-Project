@@ -30,7 +30,6 @@ namespace CISS_311_Course_Project
         {
             this.Hide();
             Directory form2 = new Directory();
-            form2.Show();
 
             form2.ShowDialog();
             this.Show();
@@ -46,7 +45,6 @@ namespace CISS_311_Course_Project
 
             this.Hide();
             Borrower form2 = new Borrower();
-            form2.Show();
 
             form2.ShowDialog();
             this.Show();
@@ -57,10 +55,18 @@ namespace CISS_311_Course_Project
         {
             this.Hide();
             AddAuthor form2 = new AddAuthor();
-            form2.Show();
 
             form2.ShowDialog();
             this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CheckInOut form2 = new CheckInOut();
+            form2.ShowDialog();
+            this.Show();
+
         }
     }
 }

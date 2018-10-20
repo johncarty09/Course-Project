@@ -29,325 +29,128 @@
         private void InitializeComponent()
         {
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.detailsListBox = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblShelfNumber = new System.Windows.Forms.Label();
-            this.lblYear = new System.Windows.Forms.Label();
-            this.lblQuantity = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtISBN = new System.Windows.Forms.TextBox();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.btnCheckInOut = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnFindAuthor = new System.Windows.Forms.Button();
-            this.lblAuthorID = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtMiddle = new System.Windows.Forms.TextBox();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(432, 220);
+            this.btnExit.Location = new System.Drawing.Point(301, 454);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(146, 41);
+            this.btnExit.Size = new System.Drawing.Size(195, 50);
             this.btnExit.TabIndex = 16;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(20, 220);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(146, 41);
-            this.btnSearch.TabIndex = 14;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // detailsListBox
-            // 
-            this.detailsListBox.FormattingEnabled = true;
-            this.detailsListBox.Location = new System.Drawing.Point(12, 272);
-            this.detailsListBox.Name = "detailsListBox";
-            this.detailsListBox.Size = new System.Drawing.Size(579, 121);
-            this.detailsListBox.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 162);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Shelf No.:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(240, 161);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Qty.:";
-            // 
-            // lblShelfNumber
-            // 
-            this.lblShelfNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblShelfNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblShelfNumber.Location = new System.Drawing.Point(70, 155);
-            this.lblShelfNumber.Name = "lblShelfNumber";
-            this.lblShelfNumber.Size = new System.Drawing.Size(79, 26);
-            this.lblShelfNumber.TabIndex = 13;
-            this.lblShelfNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblYear
-            // 
-            this.lblYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblYear.Location = new System.Drawing.Point(193, 155);
-            this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(40, 26);
-            this.lblYear.TabIndex = 12;
-            this.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblQuantity
-            // 
-            this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblQuantity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblQuantity.Location = new System.Drawing.Point(275, 155);
-            this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(40, 26);
-            this.lblQuantity.TabIndex = 14;
-            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(224, 220);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(146, 41);
-            this.btnClear.TabIndex = 15;
-            this.btnClear.Text = "Clear Form";
-            this.btnClear.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtISBN);
-            this.groupBox1.Controls.Add(this.txtTitle);
-            this.groupBox1.Controls.Add(this.btnCheckInOut);
-            this.groupBox1.Controls.Add(this.lblShelfNumber);
-            this.groupBox1.Controls.Add(this.lblYear);
-            this.groupBox1.Controls.Add(this.lblQuantity);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(580, 191);
-            this.groupBox1.TabIndex = 12;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Book Details";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(321, 161);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 13);
-            this.label7.TabIndex = 20;
-            // 
-            // txtISBN
-            // 
-            this.txtISBN.Location = new System.Drawing.Point(317, 28);
-            this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(201, 20);
-            this.txtISBN.TabIndex = 19;
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Location = new System.Drawing.Point(64, 28);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(201, 20);
-            this.txtTitle.TabIndex = 18;
-            // 
-            // btnCheckInOut
-            // 
-            this.btnCheckInOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCheckInOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCheckInOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckInOut.Location = new System.Drawing.Point(453, 152);
-            this.btnCheckInOut.Name = "btnCheckInOut";
-            this.btnCheckInOut.Size = new System.Drawing.Size(107, 33);
-            this.btnCheckInOut.TabIndex = 17;
-            this.btnCheckInOut.Text = "Check In / Out";
-            this.btnCheckInOut.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Book Title:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(276, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "ISBN:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(155, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Year:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 383);
+            this.label2.Location = new System.Drawing.Point(47, 471);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 11;
             // 
-            // groupBox2
+            // dataGridView1
             // 
-            this.groupBox2.Controls.Add(this.btnFindAuthor);
-            this.groupBox2.Controls.Add(this.lblAuthorID);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.txtMiddle);
-            this.groupBox2.Controls.Add(this.txtFirstName);
-            this.groupBox2.Controls.Add(this.txtLastName);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Location = new System.Drawing.Point(9, 54);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(557, 93);
-            this.groupBox2.TabIndex = 21;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Author";
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 213);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(777, 234);
+            this.dataGridView1.TabIndex = 17;
             // 
-            // btnFindAuthor
+            // button1
             // 
-            this.btnFindAuthor.Location = new System.Drawing.Point(430, 50);
-            this.btnFindAuthor.Name = "btnFindAuthor";
-            this.btnFindAuthor.Size = new System.Drawing.Size(121, 33);
-            this.btnFindAuthor.TabIndex = 11;
-            this.btnFindAuthor.Text = "Search";
-            this.btnFindAuthor.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(27, 13);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(195, 50);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "View All Outstanding Books";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // lblAuthorID
+            // button2
             // 
-            this.lblAuthorID.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblAuthorID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblAuthorID.Location = new System.Drawing.Point(55, 53);
-            this.lblAuthorID.Name = "lblAuthorID";
-            this.lblAuthorID.Size = new System.Drawing.Size(180, 26);
-            this.lblAuthorID.TabIndex = 32;
-            this.lblAuthorID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button2.Location = new System.Drawing.Point(301, 13);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(195, 50);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "View All Late Books";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // button3
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 60);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 13);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "ID No.:";
+            this.button3.Location = new System.Drawing.Point(575, 13);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(195, 50);
+            this.button3.TabIndex = 20;
+            this.button3.Text = "View All Books";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // txtMiddle
+            // button4
             // 
-            this.txtMiddle.Location = new System.Drawing.Point(487, 20);
-            this.txtMiddle.Name = "txtMiddle";
-            this.txtMiddle.Size = new System.Drawing.Size(64, 20);
-            this.txtMiddle.TabIndex = 11;
+            this.button4.Location = new System.Drawing.Point(576, 142);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(195, 50);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "View All Books";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // txtFirstName
+            // button5
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(270, 19);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(180, 20);
-            this.txtFirstName.TabIndex = 10;
+            this.button5.Location = new System.Drawing.Point(301, 142);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(195, 50);
+            this.button5.TabIndex = 22;
+            this.button5.Text = "View All Borrowers";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // txtLastName
+            // button6
             // 
-            this.txtLastName.Location = new System.Drawing.Point(55, 19);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(177, 20);
-            this.txtLastName.TabIndex = 9;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(456, 22);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "M.I.";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(19, 23);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 13);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Last:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(238, 23);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 13);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "First:";
+            this.button6.Location = new System.Drawing.Point(27, 142);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(195, 50);
+            this.button6.TabIndex = 21;
+            this.button6.Text = "View All Authors";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // Directory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 408);
+            this.ClientSize = new System.Drawing.Size(799, 516);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.detailsListBox);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Directory";
             this.Text = "Directory";
             this.Load += new System.EventHandler(this.Directory_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,32 +159,13 @@
         #endregion
 
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.ListBox detailsListBox;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblShelfNumber;
-        private System.Windows.Forms.Label lblYear;
-        private System.Windows.Forms.Label lblQuantity;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnCheckInOut;
-        private System.Windows.Forms.TextBox txtISBN;
-        private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnFindAuthor;
-        private System.Windows.Forms.Label lblAuthorID;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtMiddle;
-        private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
