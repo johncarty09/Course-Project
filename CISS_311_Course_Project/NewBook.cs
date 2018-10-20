@@ -17,6 +17,7 @@ namespace CISS_311_Course_Project
         public event EventHandler updateEvent;
         string connectionString;    //global variable to hold the connection string
         SqlConnection conn;         //global variable to hold sql connection
+        int selectedID;
 
         public NewBook()
         {
@@ -93,6 +94,13 @@ namespace CISS_311_Course_Project
                 } else
                 {
                     //load form to select correct author
+                    AuthorSelect form_Author = new AuthorSelect();
+                    form_Author.FirstName = txtFirstName.Text;
+                    form_Author.LastName = txtLastName.Text;
+                    form_Author.ShowDialog();
+
+                    selectedID = form_Author.SelectedID;
+                    txt_AuthorID.Text = selectedID.ToString();
                 }
 
             }

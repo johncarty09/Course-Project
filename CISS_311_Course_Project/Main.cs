@@ -78,5 +78,20 @@ namespace CISS_311_Course_Project
             form2.Show();
 
         }
+
+        private void btn_AddAuthor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddAuthor form2 = new AddAuthor();
+            form2.Show();
+
+            //Register the update event
+            form2.updateEvent += new EventHandler(handleUpdateEvent);
+
+            //Register form closed event
+            form2.FormClosed += new FormClosedEventHandler(form2_FormClosed);
+
+            form2.Show();
+        }
     }
 }

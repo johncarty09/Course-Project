@@ -28,14 +28,6 @@ namespace CISS_311_Course_Project
 
         }
 
-        /*
-         * 
-         *  INSERT INTO [LibraryDB].[dbo].[Instructors]()
-         *  VALUES (1,'John Carty');
-         *  
-         *              
-         * 
-         */
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -93,8 +85,6 @@ namespace CISS_311_Course_Project
                 data_Borrowers.ReadOnly = true;
                 data_Borrowers.DataSource = BorrowerTable.DefaultView;
 
-                //detailsListBox.DataSource = BorrowerTable;
-                //detailsListBox.DisplayMember = "BorrowerID";
             }
 
             

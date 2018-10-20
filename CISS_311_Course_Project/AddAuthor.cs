@@ -14,6 +14,7 @@ namespace CISS_311_Course_Project
 {
     public partial class AddAuthor : Form
     {
+        public event EventHandler updateEvent;
         int maxID;
         string connectionString;    //global variable to hold the connection string
         SqlConnection conn;         //global variable to hold sql connection

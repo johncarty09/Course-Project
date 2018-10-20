@@ -34,6 +34,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAddMember = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_AddAuthor = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,8 +51,8 @@
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(55, 43);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNew.Location = new System.Drawing.Point(8, 43);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(199, 108);
             this.btnNew.TabIndex = 1;
@@ -61,8 +62,8 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(411, 43);
-            this.btnOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOpen.Location = new System.Drawing.Point(474, 43);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(4);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(199, 108);
             this.btnOpen.TabIndex = 2;
@@ -72,8 +73,8 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(411, 194);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Location = new System.Drawing.Point(474, 194);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(199, 108);
             this.btnExit.TabIndex = 3;
@@ -83,8 +84,8 @@
             // 
             // btnAddMember
             // 
-            this.btnAddMember.Location = new System.Drawing.Point(55, 194);
-            this.btnAddMember.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddMember.Location = new System.Drawing.Point(8, 194);
+            this.btnAddMember.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddMember.Name = "btnAddMember";
             this.btnAddMember.Size = new System.Drawing.Size(199, 108);
             this.btnAddMember.TabIndex = 4;
@@ -94,18 +95,30 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_AddAuthor);
             this.groupBox1.Controls.Add(this.btnAddMember);
             this.groupBox1.Controls.Add(this.btnExit);
             this.groupBox1.Controls.Add(this.btnOpen);
             this.groupBox1.Controls.Add(this.btnNew);
             this.groupBox1.Location = new System.Drawing.Point(33, 121);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(681, 350);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Click and option to proceed";
+            // 
+            // btn_AddAuthor
+            // 
+            this.btn_AddAuthor.Location = new System.Drawing.Point(241, 43);
+            this.btn_AddAuthor.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AddAuthor.Name = "btn_AddAuthor";
+            this.btn_AddAuthor.Size = new System.Drawing.Size(199, 108);
+            this.btn_AddAuthor.TabIndex = 5;
+            this.btn_AddAuthor.Text = "Add New &Author";
+            this.btn_AddAuthor.UseVisualStyleBackColor = true;
+            this.btn_AddAuthor.Click += new System.EventHandler(this.btn_AddAuthor_Click);
             // 
             // mainForm
             // 
@@ -114,7 +127,7 @@
             this.ClientSize = new System.Drawing.Size(764, 513);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainForm";
             this.Text = "Library Management System";
             this.groupBox1.ResumeLayout(false);
@@ -131,6 +144,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnAddMember;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btn_AddAuthor;
     }
 }
 
