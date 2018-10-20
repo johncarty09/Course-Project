@@ -39,5 +39,15 @@ namespace CISS_311_Course_Project
         {
 
         }
+
+        private void btn_FindID_Click(object sender, EventArgs e)
+        {
+            //open form to search for member by name then return id
+        }
+
+        private void btn_findISBN_Click(object sender, EventArgs e)
+        {
+            //open for to search for book by title and author then return isbn
+        }
     }
 }

@@ -35,7 +35,7 @@
             this.btnAddMember = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_AddAuthor = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_CheckInOut = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,7 +96,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btn_CheckInOut);
             this.groupBox1.Controls.Add(this.btn_AddAuthor);
             this.groupBox1.Controls.Add(this.btnAddMember);
             this.groupBox1.Controls.Add(this.btnExit);
@@ -122,16 +122,16 @@
             this.btn_AddAuthor.UseVisualStyleBackColor = true;
             this.btn_AddAuthor.Click += new System.EventHandler(this.btn_AddAuthor_Click);
             // 
-            // button1
+            // btn_CheckInOut
             // 
-            this.button1.Location = new System.Drawing.Point(241, 194);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 108);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Book &Check In/Out";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_CheckInOut.Location = new System.Drawing.Point(241, 194);
+            this.btn_CheckInOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_CheckInOut.Name = "btn_CheckInOut";
+            this.btn_CheckInOut.Size = new System.Drawing.Size(199, 108);
+            this.btn_CheckInOut.TabIndex = 6;
+            this.btn_CheckInOut.Text = "Book &Check In/Out";
+            this.btn_CheckInOut.UseVisualStyleBackColor = true;
+            this.btn_CheckInOut.Click += new System.EventHandler(this.btn_CheckInOut_Click);
             // 
             // mainForm
             // 
@@ -158,7 +158,7 @@
         private System.Windows.Forms.Button btnAddMember;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_AddAuthor;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_CheckInOut;
     }
 }
 

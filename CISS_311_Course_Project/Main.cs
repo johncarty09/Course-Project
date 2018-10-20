@@ -60,7 +60,7 @@ namespace CISS_311_Course_Project
             this.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_CheckInOut_Click(object sender, EventArgs e)
         {
             this.Hide();
             CheckInOut form2 = new CheckInOut();
