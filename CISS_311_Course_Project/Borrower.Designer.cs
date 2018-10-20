@@ -51,7 +51,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(572, 261);
+            this.btnExit.Location = new System.Drawing.Point(575, 175);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(133, 50);
@@ -62,7 +62,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(295, 261);
+            this.btnClear.Location = new System.Drawing.Point(298, 175);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(133, 50);
@@ -73,7 +73,7 @@
             // 
             // btn_addBorrower
             // 
-            this.btn_addBorrower.Location = new System.Drawing.Point(23, 261);
+            this.btn_addBorrower.Location = new System.Drawing.Point(19, 175);
             this.btn_addBorrower.Margin = new System.Windows.Forms.Padding(4);
             this.btn_addBorrower.Name = "btn_addBorrower";
             this.btn_addBorrower.Size = new System.Drawing.Size(133, 50);
@@ -103,7 +103,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(689, 235);
+            this.groupBox1.Size = new System.Drawing.Size(689, 147);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Member Details";
@@ -169,10 +169,10 @@
             // data_Borrowers
             // 
             this.data_Borrowers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_Borrowers.Location = new System.Drawing.Point(23, 329);
+            this.data_Borrowers.Location = new System.Drawing.Point(19, 243);
             this.data_Borrowers.Name = "data_Borrowers";
             this.data_Borrowers.RowTemplate.Height = 24;
-            this.data_Borrowers.Size = new System.Drawing.Size(685, 150);
+            this.data_Borrowers.Size = new System.Drawing.Size(689, 150);
             this.data_Borrowers.TabIndex = 17;
             // 
             // libraryDBDataSet
@@ -189,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 490);
+            this.ClientSize = new System.Drawing.Size(725, 411);
             this.Controls.Add(this.data_Borrowers);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);

@@ -15,12 +15,13 @@ CREATE TABLE [LibraryDB].[dbo].[Author]
 --Create the Books table
 CREATE TABLE [LibraryDB].[dbo].[Books]
 (
-  [ISBN] INT NOT NULL PRIMARY KEY
+  [ISBN] BIGINT NOT NULL PRIMARY KEY
   , [AuthorID] INT NOT NULL FOREIGN KEY REFERENCES Author(AuthorID)
   , CopywrightYear INT NOT NULL
   , Location VARCHAR(4) NOT NULL
   , CopiesOwned Int NOT NULL
   , CopiesInStock INT NOT NULL
+  , Title VARCHAR(50) NOT NULL
 );
 
 --Create the Borrower table
@@ -37,7 +38,7 @@ CREATE TABLE [LibraryDB].[dbo].[Borrower]
 CREATE TABLE [LibraryDB].[dbo].[Transaction]
 (
   [TransactionID] INT NOT NULL PRIMARY KEY
-  , [ISBN] INT NOT NULL FOREIGN KEY REFERENCES Books(ISBN)
+  , [ISBN] BIGINT NOT NULL FOREIGN KEY REFERENCES Books(ISBN)
   , [BorrowerID] INT NOT NULL FOREIGN KEY REFERENCES Borrower(BorrowerID)
   , CheckoutDate DATE NOT NULL
   , DateDue DATE NOT NULL
