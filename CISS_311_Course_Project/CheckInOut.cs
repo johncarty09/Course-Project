@@ -173,18 +173,24 @@ namespace CISS_311_Course_Project
                 "WHERE TransactionID = @transactionID", conn))
             using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
             {
+                conn.Open();
                 comd.Parameters.AddWithValue("@transactionID", transactionID);
+                comd.ExecuteScalar();
             }
             //then increment on hand for book
             using (conn = new SqlConnection(connectionString))
             using (SqlCommand comd = new SqlCommand(
-                "UPDATE LibraryDB.dbo.[Transaction] " +
-                "SET ReturnDate = GETDATE() " +
-                "WHERE TransactionID = @transactionID", conn))
+                "UPDATE LibraryDB.dbo.Books " +
+                 "SET CopiesInStock = (CopiesInStock + 1) " +
+                 "Where ISBN = @ISBN", conn))
             using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
             {
-                comd.Parameters.AddWithValue("@transactionID", transactionID);
+                conn.Open();
+                comd.Parameters.AddWithValue("@ISBN", ISBN);
+                comd.ExecuteScalar();
             }
+            MessageBox.Show("Book successfully checked in.");
+            txt_ISBN.Text = "";
         }
 
         private void New_Member_Load(object sender, EventArgs e)
