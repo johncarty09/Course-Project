@@ -51,5 +51,12 @@ Where ISBN = 1234567894567
 --
 --select InventoryOut, BorrowerType from LibraryDB.dbo.Borrower where BorrowerID = 12345
 
-select * from LibraryDB.dbo.[Transaction]
+/*
 
+UPDATE LibraryDB.dbo.[Transaction]
+SET ReturnDate = GETDATE()
+WHERE TransactionID = 2
+
+*/
+
+select * from LibraryDB.dbo.[Transaction] 

@@ -138,8 +138,53 @@ namespace CISS_311_Course_Project
         {
             //modify check out transaction to show book is in
             //increment on hand for book.
-            //
-            
+            //check if book is indeed checked out to user
+            //if so update transaction with todays date on return date
+            //then increment on hand for book
+            //select * from LibraryDB.dbo.[Transaction] where ISBN = @ISBN and BorrowerID = @BorrowerID and ReturnDate IS NULL
+            string ISBN = txt_ISBN.Text;
+            int borrowerID = int.Parse(txtMemberID.Text.ToString());
+            int transactionID;
+            using (conn = new SqlConnection(connectionString))
+            using (SqlCommand comd = new SqlCommand(
+                "select * from LibraryDB.dbo.[Transaction] where ISBN = @ISBN and BorrowerID = @BorrowerID " +
+                "and ReturnDate IS NULL", conn))
+            using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
+            {
+                comd.Parameters.AddWithValue("@BorrowerID", borrowerID);
+                comd.Parameters.AddWithValue("@ISBN", ISBN);
+
+
+                DataTable TransactionTable = new DataTable();
+                adapter.Fill(TransactionTable);
+                if (TransactionTable.Rows.Count == 0)
+                {
+                    MessageBox.Show("This book is not currently check out to this customer.");
+                    return;
+                }
+                DataRow dr = TransactionTable.Rows[0];
+                transactionID = int.Parse(dr["TransactionID"].ToString());
+            }
+            //update transaction with todays date on return date
+            using (conn = new SqlConnection(connectionString))
+            using (SqlCommand comd = new SqlCommand(
+                "UPDATE LibraryDB.dbo.[Transaction] " +
+                "SET ReturnDate = GETDATE() " +
+                "WHERE TransactionID = @transactionID", conn))
+            using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
+            {
+                comd.Parameters.AddWithValue("@transactionID", transactionID);
+            }
+            //then increment on hand for book
+            using (conn = new SqlConnection(connectionString))
+            using (SqlCommand comd = new SqlCommand(
+                "UPDATE LibraryDB.dbo.[Transaction] " +
+                "SET ReturnDate = GETDATE() " +
+                "WHERE TransactionID = @transactionID", conn))
+            using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
+            {
+                comd.Parameters.AddWithValue("@transactionID", transactionID);
+            }
         }
 
         private void New_Member_Load(object sender, EventArgs e)
