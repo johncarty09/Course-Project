@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CISS_311_Course_Project.AddAuthor" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIEBAAECAAATgAAICEkBACACQAIAQAACABAAAAAAA=</HashCode>
+      <FileName>AddAuthor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CISS_311_Course_Project.AuthorSelect" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAFCAACBAAAgiAACAAAACAAQgCAAAACAQCAAIAAg=</HashCode>
+      <FileName>AuthorSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CISS_311_Course_Project.Borrower" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAQgECAAAB0AAICAEAACACQAIAAAACABAAAAAAI=</HashCode>
+      <FileName>Borrower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CISS_311_Course_Project.CheckInOut" Collapsed="true">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAASAAABEAAACAAEASgCDAAQAAAGAAQAAAAgA=</HashCode>
+      <FileName>CheckInOut.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CISS_311_Course_Project.Directory" Collapsed="true">
+    <Position X="6.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAABAAAACAAAACAOg5AAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Directory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CISS_311_Course_Project.mainForm" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAASECAAABABAACAAAACICEIAAgAACAAAABBAAA=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CISS_311_Course_Project.NewBook" Collapsed="true">
+    <Position X="9" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CACAEgAAGCAAABwAAACAAAASACZAqAAABCAJAAABIAI=</HashCode>
+      <FileName>NewBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CISS_311_Course_Project.Program" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.ContainerControl" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Forms.ScrollableControl" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Forms.Control" Collapsed="true">
+    <Position X="20.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
