@@ -95,13 +95,6 @@ namespace CISS_311_Course_Project
                                 if(allowed)
                                 {
                                     //process transaction and decrement inventory.
-                                    /*
-                                     * UPDATE LibraryDB.dbo.Books
-                                        SET CopiesInStock = (CopiesInStock - 1)
-                                        Where ISBN = 1234567894567
-                                     * 
-                                     */
-
                                     using (conn = new SqlConnection(connectionString))
                                     using (SqlCommand cmd2 = new SqlCommand(
                                         "UPDATE LibraryDB.dbo.Books " +
@@ -145,6 +138,7 @@ namespace CISS_311_Course_Project
         {
             //modify check out transaction to show book is in
             //increment on hand for book.
+            //
             
         }
 
