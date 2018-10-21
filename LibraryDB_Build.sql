@@ -1,5 +1,5 @@
 ﻿--Create the DB
---CREATE DATABASE LibraryDB;
+CREATE DATABASE LibraryDB;
 
 
 
@@ -21,7 +21,7 @@ CREATE TABLE [LibraryDB].[dbo].[Books]
   , Location VARCHAR(4) NOT NULL
   , CopiesOwned Int NOT NULL
   , CopiesInStock INT NOT NULL
-  , Title VARCHAR(50) NOT NULL
+  , Title VARCHAR(100) NOT NULL
 );
 
 --Create the Borrower table

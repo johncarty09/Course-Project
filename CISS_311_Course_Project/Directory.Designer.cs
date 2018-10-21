@@ -28,135 +28,135 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_ISBN = new System.Windows.Forms.TextBox();
+            this.txt_FirstName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.data_Reports = new System.Windows.Forms.DataGridView();
-            this.btn_CheckedOutBooks = new System.Windows.Forms.Button();
-            this.btn_LateBooks = new System.Windows.Forms.Button();
-            this.btn_AllBooks = new System.Windows.Forms.Button();
-            this.btn_AllBorrowers = new System.Windows.Forms.Button();
-            this.btn_AllAuthors = new System.Windows.Forms.Button();
-            this.btn_Transactions = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.data_Reports)).BeginInit();
+            this.txt_Title = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_LastName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.data_Bookinfo = new System.Windows.Forms.DataGridView();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.btn_exit = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.data_Bookinfo)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnExit
+            // label1
             // 
-            this.btnExit.Location = new System.Drawing.Point(301, 472);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(195, 50);
-            this.btnExit.TabIndex = 16;
-            this.btnExit.Text = "E&xit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(122, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ISBN";
+            // 
+            // txt_ISBN
+            // 
+            this.txt_ISBN.Location = new System.Drawing.Point(185, 31);
+            this.txt_ISBN.Name = "txt_ISBN";
+            this.txt_ISBN.Size = new System.Drawing.Size(270, 20);
+            this.txt_ISBN.TabIndex = 1;
+            this.txt_ISBN.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txt_FirstName
+            // 
+            this.txt_FirstName.Location = new System.Drawing.Point(185, 115);
+            this.txt_FirstName.Name = "txt_FirstName";
+            this.txt_FirstName.Size = new System.Drawing.Size(100, 20);
+            this.txt_FirstName.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 471);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(122, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 17);
-            this.label2.TabIndex = 11;
+            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "First Name";
             // 
-            // data_Reports
+            // txt_Title
             // 
-            this.data_Reports.AllowUserToAddRows = false;
-            this.data_Reports.AllowUserToDeleteRows = false;
-            this.data_Reports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_Reports.Location = new System.Drawing.Point(10, 213);
-            this.data_Reports.Name = "data_Reports";
-            this.data_Reports.ReadOnly = true;
-            this.data_Reports.RowTemplate.Height = 24;
-            this.data_Reports.Size = new System.Drawing.Size(777, 252);
-            this.data_Reports.TabIndex = 17;
+            this.txt_Title.Location = new System.Drawing.Point(185, 73);
+            this.txt_Title.Name = "txt_Title";
+            this.txt_Title.Size = new System.Drawing.Size(270, 20);
+            this.txt_Title.TabIndex = 5;
             // 
-            // btn_CheckedOutBooks
+            // label3
             // 
-            this.btn_CheckedOutBooks.Location = new System.Drawing.Point(27, 13);
-            this.btn_CheckedOutBooks.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_CheckedOutBooks.Name = "btn_CheckedOutBooks";
-            this.btn_CheckedOutBooks.Size = new System.Drawing.Size(195, 50);
-            this.btn_CheckedOutBooks.TabIndex = 18;
-            this.btn_CheckedOutBooks.Text = "View All Outstanding Books";
-            this.btn_CheckedOutBooks.UseVisualStyleBackColor = true;
-            this.btn_CheckedOutBooks.Click += new System.EventHandler(this.button1_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(122, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Title";
             // 
-            // btn_LateBooks
+            // txt_LastName
             // 
-            this.btn_LateBooks.Location = new System.Drawing.Point(301, 13);
-            this.btn_LateBooks.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_LateBooks.Name = "btn_LateBooks";
-            this.btn_LateBooks.Size = new System.Drawing.Size(195, 50);
-            this.btn_LateBooks.TabIndex = 19;
-            this.btn_LateBooks.Text = "View All Late Books";
-            this.btn_LateBooks.UseVisualStyleBackColor = true;
-            this.btn_LateBooks.Click += new System.EventHandler(this.btn_LateBooks_Click);
+            this.txt_LastName.Location = new System.Drawing.Point(355, 115);
+            this.txt_LastName.Name = "txt_LastName";
+            this.txt_LastName.Size = new System.Drawing.Size(100, 20);
+            this.txt_LastName.TabIndex = 7;
             // 
-            // btn_AllBooks
+            // label4
             // 
-            this.btn_AllBooks.Location = new System.Drawing.Point(575, 13);
-            this.btn_AllBooks.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_AllBooks.Name = "btn_AllBooks";
-            this.btn_AllBooks.Size = new System.Drawing.Size(195, 50);
-            this.btn_AllBooks.TabIndex = 20;
-            this.btn_AllBooks.Text = "View All Books";
-            this.btn_AllBooks.UseVisualStyleBackColor = true;
-            this.btn_AllBooks.Click += new System.EventHandler(this.btn_AllBooks_Click);
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(291, 118);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Last Name";
             // 
-            // btn_AllBorrowers
+            // data_Bookinfo
             // 
-            this.btn_AllBorrowers.Location = new System.Drawing.Point(301, 142);
-            this.btn_AllBorrowers.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_AllBorrowers.Name = "btn_AllBorrowers";
-            this.btn_AllBorrowers.Size = new System.Drawing.Size(195, 50);
-            this.btn_AllBorrowers.TabIndex = 22;
-            this.btn_AllBorrowers.Text = "View All Borrowers";
-            this.btn_AllBorrowers.UseVisualStyleBackColor = true;
-            this.btn_AllBorrowers.Click += new System.EventHandler(this.btn_AllBorrowers_Click);
+            this.data_Bookinfo.AllowUserToAddRows = false;
+            this.data_Bookinfo.AllowUserToDeleteRows = false;
+            this.data_Bookinfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_Bookinfo.Location = new System.Drawing.Point(25, 161);
+            this.data_Bookinfo.Name = "data_Bookinfo";
+            this.data_Bookinfo.ReadOnly = true;
+            this.data_Bookinfo.Size = new System.Drawing.Size(540, 150);
+            this.data_Bookinfo.TabIndex = 8;
             // 
-            // btn_AllAuthors
+            // btn_Search
             // 
-            this.btn_AllAuthors.Location = new System.Drawing.Point(27, 142);
-            this.btn_AllAuthors.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_AllAuthors.Name = "btn_AllAuthors";
-            this.btn_AllAuthors.Size = new System.Drawing.Size(195, 50);
-            this.btn_AllAuthors.TabIndex = 21;
-            this.btn_AllAuthors.Text = "View All Authors";
-            this.btn_AllAuthors.UseVisualStyleBackColor = true;
-            this.btn_AllAuthors.Click += new System.EventHandler(this.btn_AllAuthors_Click);
+            this.btn_Search.Location = new System.Drawing.Point(25, 330);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(146, 41);
+            this.btn_Search.TabIndex = 22;
+            this.btn_Search.Text = "&Search";
+            this.btn_Search.UseVisualStyleBackColor = true;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
-            // btn_Transactions
+            // btn_exit
             // 
-            this.btn_Transactions.Location = new System.Drawing.Point(575, 142);
-            this.btn_Transactions.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Transactions.Name = "btn_Transactions";
-            this.btn_Transactions.Size = new System.Drawing.Size(195, 50);
-            this.btn_Transactions.TabIndex = 23;
-            this.btn_Transactions.Text = "View All Transactions";
-            this.btn_Transactions.UseVisualStyleBackColor = true;
-            this.btn_Transactions.Click += new System.EventHandler(this.btn_Transactions_Click);
+            this.btn_exit.Location = new System.Drawing.Point(419, 330);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(146, 41);
+            this.btn_exit.TabIndex = 23;
+            this.btn_exit.Text = "E&xit";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // Directory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 535);
-            this.Controls.Add(this.btn_Transactions);
-            this.Controls.Add(this.btn_AllBorrowers);
-            this.Controls.Add(this.btn_AllAuthors);
-            this.Controls.Add(this.btn_AllBooks);
-            this.Controls.Add(this.btn_LateBooks);
-            this.Controls.Add(this.btn_CheckedOutBooks);
-            this.Controls.Add(this.data_Reports);
-            this.Controls.Add(this.btnExit);
+            this.ClientSize = new System.Drawing.Size(577, 392);
+            this.Controls.Add(this.btn_exit);
+            this.Controls.Add(this.btn_Search);
+            this.Controls.Add(this.data_Bookinfo);
+            this.Controls.Add(this.txt_LastName);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txt_Title);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_FirstName);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Controls.Add(this.txt_ISBN);
+            this.Controls.Add(this.label1);
             this.Name = "Directory";
             this.Text = "Directory";
-            this.Load += new System.EventHandler(this.Directory_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.data_Reports)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_Bookinfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,14 +164,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_ISBN;
+        private System.Windows.Forms.TextBox txt_FirstName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView data_Reports;
-        private System.Windows.Forms.Button btn_CheckedOutBooks;
-        private System.Windows.Forms.Button btn_LateBooks;
-        private System.Windows.Forms.Button btn_AllBooks;
-        private System.Windows.Forms.Button btn_AllBorrowers;
-        private System.Windows.Forms.Button btn_AllAuthors;
-        private System.Windows.Forms.Button btn_Transactions;
+        private System.Windows.Forms.TextBox txt_Title;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_LastName;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView data_Bookinfo;
+        private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.Button btn_exit;
     }
 }

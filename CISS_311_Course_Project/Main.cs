@@ -29,7 +29,7 @@ namespace CISS_311_Course_Project
         private void btnOpen_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Directory form2 = new Directory();
+            Reporting form2 = new Reporting();
 
             form2.ShowDialog();
             this.Show();
@@ -67,6 +67,14 @@ namespace CISS_311_Course_Project
             form2.ShowDialog();
             this.Show();
 
+        }
+
+        private void btn_BookSearch_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Directory form2 = new Directory();
+            form2.ShowDialog();
+            this.Show();
         }
     }
 }

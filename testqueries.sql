@@ -70,12 +70,13 @@ INSERT INTO [LibraryDB].[dbo].[Transaction](TransactionID, ISBN, BorrowerID, Che
 VALUES (3,9780590353403,12345, '2018-01-01');
 
 
-*/
-
-
 select ISBN, CONCAT(b.BorrowerFirstName, ' ', b.BorrowerLastName) AS Borrower, CheckOutDate ,  
 DATEADD(month, 1, CheckOutDate) AS DueDate, DATEDIFF(day, DATEADD(month, 1, CheckOutDate), GETDATE()) AS DaysLate
 from LibraryDB.dbo.[Transaction] t 
 join LibraryDB.dbo.Borrower b on t.BorrowerID = b.BorrowerID
 where ReturnDate IS NULL 
 and GETDATE() > DATEADD(month, 1, CheckOutDate)
+
+*/
+
+select * from LibraryDB.dbo

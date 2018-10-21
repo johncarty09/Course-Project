@@ -117,6 +117,16 @@ namespace CISS_311_Course_Project
                                         cmd2.Parameters.AddWithValue("@BorrowerID", borrowerID);
                                         cmd2.ExecuteScalar();
                                     }
+                                    using (conn = new SqlConnection(connectionString))
+                                    using (SqlCommand cmd2 = new SqlCommand(
+                                        "UPDATE LibraryDB.dbo.Borrower " +
+                                        "SET InventoryOut = (InventoryOut + 1) " +
+                                        "Where BorrowerID = @borrowerID", conn))
+                                    {
+                                        conn.Open();
+                                        cmd2.Parameters.AddWithValue("@BorrowerID", borrowerID);
+                                        cmd2.ExecuteScalar();
+                                    }
                                     MessageBox.Show("Book successfully checked out.");
                                     txt_ISBN.Text = "";
                                 } else
@@ -188,6 +198,16 @@ namespace CISS_311_Course_Project
                 conn.Open();
                 comd.Parameters.AddWithValue("@ISBN", ISBN);
                 comd.ExecuteScalar();
+            }
+            using (conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd2 = new SqlCommand(
+                "UPDATE LibraryDB.dbo.Borrower " +
+                "SET InventoryOut = (InventoryOut - 1) " +
+                "Where BorrowerID = @borrowerID", conn))
+            {
+                conn.Open();
+                cmd2.Parameters.AddWithValue("@BorrowerID", borrowerID);
+                cmd2.ExecuteScalar();
             }
             MessageBox.Show("Book successfully checked in.");
             txt_ISBN.Text = "";
