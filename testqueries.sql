@@ -57,6 +57,25 @@ UPDATE LibraryDB.dbo.[Transaction]
 SET ReturnDate = GETDATE()
 WHERE TransactionID = 2
 
+
+SELECT DATEADD(month,1, '2018-10-20') AS returnDate; 
+
+
+select b.ISBN, b.Title, CONCAT(a.AuthorFirstName, ' ', a.AuthorLastName) AS Author, 
+b.[Location], b.CopiesInStock
+from LibraryDB.dbo.Books b 
+join LibraryDB.dbo.Author a on a.AuthorID = b.AuthorID;
+
+INSERT INTO [LibraryDB].[dbo].[Transaction](TransactionID, ISBN, BorrowerID, CheckOutDate)
+VALUES (3,9780590353403,12345, '2018-01-01');
+
+
 */
 
-select * from LibraryDB.dbo.[Transaction] 
+
+select ISBN, CONCAT(b.BorrowerFirstName, ' ', b.BorrowerLastName) AS Borrower, CheckOutDate ,  
+DATEADD(month, 1, CheckOutDate) AS DueDate, DATEDIFF(day, DATEADD(month, 1, CheckOutDate), GETDATE()) AS DaysLate
+from LibraryDB.dbo.[Transaction] t 
+join LibraryDB.dbo.Borrower b on t.BorrowerID = b.BorrowerID
+where ReturnDate IS NULL 
+and GETDATE() > DATEADD(month, 1, CheckOutDate)

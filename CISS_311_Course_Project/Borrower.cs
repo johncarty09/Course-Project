@@ -120,5 +120,10 @@ namespace CISS_311_Course_Project
         {
 
         }
+
+        private void data_Borrowers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

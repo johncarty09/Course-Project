@@ -30,20 +30,20 @@
         {
             this.btnExit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.data_Reports = new System.Windows.Forms.DataGridView();
+            this.btn_CheckedOutBooks = new System.Windows.Forms.Button();
+            this.btn_LateBooks = new System.Windows.Forms.Button();
+            this.btn_AllBooks = new System.Windows.Forms.Button();
+            this.btn_AllBorrowers = new System.Windows.Forms.Button();
+            this.btn_AllAuthors = new System.Windows.Forms.Button();
+            this.btn_Transactions = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.data_Reports)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(301, 454);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Location = new System.Drawing.Point(301, 472);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(195, 50);
             this.btnExit.TabIndex = 16;
@@ -60,97 +60,103 @@
             this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 11;
             // 
-            // dataGridView1
+            // data_Reports
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 213);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(777, 234);
-            this.dataGridView1.TabIndex = 17;
+            this.data_Reports.AllowUserToAddRows = false;
+            this.data_Reports.AllowUserToDeleteRows = false;
+            this.data_Reports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_Reports.Location = new System.Drawing.Point(10, 213);
+            this.data_Reports.Name = "data_Reports";
+            this.data_Reports.ReadOnly = true;
+            this.data_Reports.RowTemplate.Height = 24;
+            this.data_Reports.Size = new System.Drawing.Size(777, 252);
+            this.data_Reports.TabIndex = 17;
             // 
-            // button1
+            // btn_CheckedOutBooks
             // 
-            this.button1.Location = new System.Drawing.Point(27, 13);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 50);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "View All Outstanding Books";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_CheckedOutBooks.Location = new System.Drawing.Point(27, 13);
+            this.btn_CheckedOutBooks.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_CheckedOutBooks.Name = "btn_CheckedOutBooks";
+            this.btn_CheckedOutBooks.Size = new System.Drawing.Size(195, 50);
+            this.btn_CheckedOutBooks.TabIndex = 18;
+            this.btn_CheckedOutBooks.Text = "View All Outstanding Books";
+            this.btn_CheckedOutBooks.UseVisualStyleBackColor = true;
+            this.btn_CheckedOutBooks.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_LateBooks
             // 
-            this.button2.Location = new System.Drawing.Point(301, 13);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 50);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "View All Late Books";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_LateBooks.Location = new System.Drawing.Point(301, 13);
+            this.btn_LateBooks.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_LateBooks.Name = "btn_LateBooks";
+            this.btn_LateBooks.Size = new System.Drawing.Size(195, 50);
+            this.btn_LateBooks.TabIndex = 19;
+            this.btn_LateBooks.Text = "View All Late Books";
+            this.btn_LateBooks.UseVisualStyleBackColor = true;
+            this.btn_LateBooks.Click += new System.EventHandler(this.btn_LateBooks_Click);
             // 
-            // button3
+            // btn_AllBooks
             // 
-            this.button3.Location = new System.Drawing.Point(575, 13);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(195, 50);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "View All Books";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_AllBooks.Location = new System.Drawing.Point(575, 13);
+            this.btn_AllBooks.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AllBooks.Name = "btn_AllBooks";
+            this.btn_AllBooks.Size = new System.Drawing.Size(195, 50);
+            this.btn_AllBooks.TabIndex = 20;
+            this.btn_AllBooks.Text = "View All Books";
+            this.btn_AllBooks.UseVisualStyleBackColor = true;
+            this.btn_AllBooks.Click += new System.EventHandler(this.btn_AllBooks_Click);
             // 
-            // button4
+            // btn_AllBorrowers
             // 
-            this.button4.Location = new System.Drawing.Point(576, 142);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(195, 50);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "View All Books";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_AllBorrowers.Location = new System.Drawing.Point(301, 142);
+            this.btn_AllBorrowers.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AllBorrowers.Name = "btn_AllBorrowers";
+            this.btn_AllBorrowers.Size = new System.Drawing.Size(195, 50);
+            this.btn_AllBorrowers.TabIndex = 22;
+            this.btn_AllBorrowers.Text = "View All Borrowers";
+            this.btn_AllBorrowers.UseVisualStyleBackColor = true;
+            this.btn_AllBorrowers.Click += new System.EventHandler(this.btn_AllBorrowers_Click);
             // 
-            // button5
+            // btn_AllAuthors
             // 
-            this.button5.Location = new System.Drawing.Point(301, 142);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(195, 50);
-            this.button5.TabIndex = 22;
-            this.button5.Text = "View All Borrowers";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_AllAuthors.Location = new System.Drawing.Point(27, 142);
+            this.btn_AllAuthors.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_AllAuthors.Name = "btn_AllAuthors";
+            this.btn_AllAuthors.Size = new System.Drawing.Size(195, 50);
+            this.btn_AllAuthors.TabIndex = 21;
+            this.btn_AllAuthors.Text = "View All Authors";
+            this.btn_AllAuthors.UseVisualStyleBackColor = true;
+            this.btn_AllAuthors.Click += new System.EventHandler(this.btn_AllAuthors_Click);
             // 
-            // button6
+            // btn_Transactions
             // 
-            this.button6.Location = new System.Drawing.Point(27, 142);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(195, 50);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "View All Authors";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_Transactions.Location = new System.Drawing.Point(575, 142);
+            this.btn_Transactions.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Transactions.Name = "btn_Transactions";
+            this.btn_Transactions.Size = new System.Drawing.Size(195, 50);
+            this.btn_Transactions.TabIndex = 23;
+            this.btn_Transactions.Text = "View All Transactions";
+            this.btn_Transactions.UseVisualStyleBackColor = true;
+            this.btn_Transactions.Click += new System.EventHandler(this.btn_Transactions_Click);
             // 
             // Directory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 516);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(799, 535);
+            this.Controls.Add(this.btn_Transactions);
+            this.Controls.Add(this.btn_AllBorrowers);
+            this.Controls.Add(this.btn_AllAuthors);
+            this.Controls.Add(this.btn_AllBooks);
+            this.Controls.Add(this.btn_LateBooks);
+            this.Controls.Add(this.btn_CheckedOutBooks);
+            this.Controls.Add(this.data_Reports);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Directory";
             this.Text = "Directory";
             this.Load += new System.EventHandler(this.Directory_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_Reports)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,12 +166,12 @@
 
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridView data_Reports;
+        private System.Windows.Forms.Button btn_CheckedOutBooks;
+        private System.Windows.Forms.Button btn_LateBooks;
+        private System.Windows.Forms.Button btn_AllBooks;
+        private System.Windows.Forms.Button btn_AllBorrowers;
+        private System.Windows.Forms.Button btn_AllAuthors;
+        private System.Windows.Forms.Button btn_Transactions;
     }
 }

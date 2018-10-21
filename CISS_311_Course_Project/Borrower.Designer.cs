@@ -178,6 +178,7 @@
             this.data_Borrowers.RowTemplate.Height = 24;
             this.data_Borrowers.Size = new System.Drawing.Size(689, 150);
             this.data_Borrowers.TabIndex = 17;
+            this.data_Borrowers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_Borrowers_CellContentClick);
             // 
             // libraryDBDataSet
             // 
