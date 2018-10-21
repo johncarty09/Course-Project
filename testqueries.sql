@@ -41,6 +41,15 @@ select b.BorrowerID from LibraryDB.dbo.Borrower b
 where b.BorrowerFirstName =  'John' and b.BorrowerLastName = 'Carty' 
 and b.BorrowerType = 'F' 
 
-*/
 
-select * from LibraryDB.dbo.Books
+UPDATE LibraryDB.dbo.Books
+SET CopiesInStock = (CopiesInStock - 1)
+Where ISBN = 1234567894567
+
+
+*/
+--
+--select InventoryOut, BorrowerType from LibraryDB.dbo.Borrower where BorrowerID = 12345
+
+select * from LibraryDB.dbo.[Transaction]
+
